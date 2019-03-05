@@ -5,4 +5,4 @@ Deskripsi :
 Nama Anggota :
 
 1.Hendra Laksmana (E41161215)
-2.Morgan Ardianto
+2.Morgan Ardianto (E41172126)
