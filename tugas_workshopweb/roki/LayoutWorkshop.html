@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Layout</title>
-	<style>
+	<title>Layout Bootstrap</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
 	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
@@ -10,55 +9,64 @@
 	<script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
 	<script type="text/javascript" src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-	
-	.navbar{
-		background-color: red;
-	}
 
+	<style>
 	.container{
 		position: center;
 		margin-top: 20px;
 	}
 
-	.jumbotron{
-		background-color: blue;
-		height: 350px;
-		text-align: center;
-		padding-top: 175px;
-	}
-
-	.isi{
+	.content{
 		width: 60%;
 		height: 200px;
-		background-color: yellow;
-		float: left;
+		background-color: #268EFF;
 		text-align: center;
 		padding-top: 100px;
+		display: inline-block;
 	}
 
 	.sidebar{
 		width: 38%;
 		height: 200px;
-		background-color: green;
+		background-color: #007BFF;
 		float: right;
 		text-align: center;
 		padding-top: 100px;
+		float: right;
 	}
 
+	.footer{
+		margin-bottom:0;
+		background-color:  #2079D8;
+		height: 50px;
+		padding-top: 10px;
+		text-align: center;
+		margin-top: 50px;
+	}
+	
 	</style>
+	
+
 </head>
 <body>
-	<nav class="navbar">navbar</nav>
+	<nav class="navbar navbar-light bg-light">
+	  <a class="navbar-brand">Navbar</a>
+	</nav>
 
 	<div class="container">
 
-		<div class="jumbotron">timeline</div>
+		<div class="jumbotron">
+		  <h1 class="display-4">Hello, world!</h1>
+		  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+		  <hr class="my-4">
+		  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+		  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+		</div>
 
-		<div class="isi">Isi</div>
+		<div class="content">Isi</div>
 
 		<div class="sidebar">Sidebar</div>
-
 	</div>
-
+	<div class="footer">Footer</div>
 </body>
 </html>
