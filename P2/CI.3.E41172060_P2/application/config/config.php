@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/P2\Roki\belajarFramework_roki';
+$config['base_url'] = 'http://localhost/P2/CI.3.E41172060_P2';
 
 /*
 |--------------------------------------------------------------------------
