@@ -1,17 +1,30 @@
 <?php
-	 class Barang extends CI_Controller
-	 {
-	 	 public	function index(){		
+	 class Barang extends CI_Controller{
+
+	 function __construct(){
+	 	parent::__construct();
+	 	//load class M_barang
+	 	$this->load->model("M_barang"); //merujuk ke model
+	 }
+
+	function index(){		
 	 	 	
-	 	 	$this->load->model("M_barang"); //merujuk ke model
+	 	 	
 	 	 	$data['list']=$this->M_barang->list_barang();
 	 	 	
-	 		$data['judul']="ini adalah barang";
 	 		$this->load->view('v_barang',$data); //merujuk ke view
-	 	}
+	 	//	$data['judul']="ini adalah barang";
+	 
+	 }
 	 
 	 function edit(){
 	 	echo "Edit";
 	 }
+
+	 function add(){
+	 		$this->load->view('v_tambah');
+	 }
+
+
 
 } 

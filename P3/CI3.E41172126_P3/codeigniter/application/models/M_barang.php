@@ -8,5 +8,11 @@ class M_barang extends CI_Model{
 		return $this->db->get($this->table)->result();
 	}
 
+	public function save()
+	{
+		//mysql_query ("select * from kode barang where kdbarang="$")
+		$post = $this->input->post();
+	}
+
 }
 
