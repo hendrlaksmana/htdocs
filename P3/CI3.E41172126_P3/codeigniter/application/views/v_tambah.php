@@ -19,36 +19,44 @@
         <?php include'admin/sidebar.php'; ?>
           <div id="content-wrapper">
             <div class="container-fluid">
-                <?php include'admin/breadcrumb.php'; ?>
-                  <form>
+                <!-- <?php //include'admin/breadcrumb.php'; ?> -->
+                  <form action="<?php base_url('v_tambah'); ?>" method="POST" enctype="multipart/form-data">
+                    <div class="form-group row">
+                      <label class="col-sm-2 col-form-label">Kode Barang</label>
+                      <div class="col-sm-10">
+                        <input type="text" name="kdbarang" class="form-control" id="inputKodeBarang" placeholder="Kode Barang">
+                      </div>
+                    </div>
                     <div class="form-group row">
                       <label class="col-sm-2 col-form-label">Nama Barang</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputNama Barang" placeholder="Nama Barang">
+                        <input type="text" name="nama" class="form-control" id="inputNamaBarang" placeholder="Nama Barang">
                       </div>
                     </div>
                     <div class="form-group row">
                       <label class="col-sm-2 col-form-label">Deskripsi</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputNama Barang" placeholder="Deskripsi">
+                        <input type="text" name="deskripsi" class="form-control" id="inputDeskripsi" placeholder="Deskripsi">
                       </div>
                     </div>
                     <div class="form-group row">
                       <label class="col-sm-2 col-form-label">Stok</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputNama Barang" placeholder="Stok">
+                        <input type="text" name="stokbarang" class="form-control" id="inputStokBarang" placeholder="Stok Barang">
                       </div>
                     </div>
                     <div class="form-group row">
                       <label class="col-sm-2 col-form-label">Harga Barang</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputNama Barang" placeholder="Harga Barang">
+                        <input type="text" name="hargabarang" class="form-control" id="inputHargaBarang" placeholder="Harga Barang">
                       </div>
                     </div>
                     <div class="form-group row">
-                      <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                      <div class="col-sm-10" align="center">
+                        <button type="submit" class="btn btn-success">Save</button>
                       </div>
+                      
+                      <a href="<?php echo base_url('index.php/barang/'); ?>" class="btn btn-primary">Batal</a>
                     </div>
                   </form>
             </div><!-- /.container-fluid -->

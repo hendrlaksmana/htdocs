@@ -25,7 +25,7 @@
                   <i class="fas fa-table"></i>Data Barang</div>
                     
                     <div class="card-body">
-                      <a href="<?php echo base_url('index.php/barang/add'); ?>" class="btn btn-danger">Hapus</a>
+                      <a href="<?php echo base_url('index.php/barang/add'); ?>" class="btn btn-primary">Tambah Data</a>
 
                       <div class="table-responsive">
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -46,8 +46,8 @@
                              <tr>
                                <td><?php echo $row->kdbarang."<br>"; ?></td>
                                <td><?php echo $row->nama."<br>"; ?></td>
-                               <td><?php echo $row->kdbarang."<br>"; ?></td>
-                               <td><?php echo $row->kdbarang."<br>"; ?></td>
+                               <td><?php echo $row->deskripsi."<br>"; ?></td>
+                               <td><?php echo $row->stokbarang."<br>"; ?></td>
                                <td><?php echo $row->hargabarang."<br>"; ?></td>
                                <td><a href="" class="btn btn-danger">Hapus</a>
                                    <a href="" class="btn btn-success">Ubah</a></td>
