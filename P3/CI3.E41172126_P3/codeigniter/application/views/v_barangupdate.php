@@ -23,7 +23,7 @@
 
 
                 <!-- <?php //include'admin/breadcrumb.php'; ?> -->
-                  <form action="<?php base_url("barang/update") ?>" method="post"
+                  <form action="<?php site_url("barang/update") ?>" method="post"
               enctype="multipart/form-data">
               
                     <div class="form-group row">
@@ -54,11 +54,12 @@
                       <label class="col-sm-2 col-form-label">Harga Barang</label>
                       <div class="col-sm-10">
                         <input type="text" name="hargabarang" class="form-control" id="inputHargaBarang" placeholder="Harga Barang" value="<?php echo $barang->hargabarang ?>">
+                        
                       </div>
                     </div>
                     <div class="form-group row">
                       <div class="col-sm-10" align="center">
-                       <button type="submit" class="btn btn-success">Save</button>
+                       <button type="submit" class="btn btn-success">Saveeeee</button>
                       </div>
                       
                       <a href="<?php echo base_url('index.php/barang/'); ?>" class="btn btn-primary">Batal</a>

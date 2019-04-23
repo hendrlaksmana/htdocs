@@ -33,7 +33,7 @@
 	 		}
 	}
 
-	public function update($id)
+	public function update($id=null)
     {
                
         $Barang = $this->M_barang;
@@ -41,9 +41,15 @@
         $validation->set_rules($Barang->rules());
 
         $data["barang"] = $Barang->getById($id);
-       if (!$data["barang"]) show_404();
+
+      	$this->load->view("v_barangupdate",$data);
+
+      if ($validation ->run()) {
+			$Barang->update(); 			
+	 		redirect(site_url('barang'));
+	 		}
         
-        $this->load->view("v_barangupdate",$data);
+        
     }
 
     public function delete($id=null)
