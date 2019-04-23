@@ -19,42 +19,47 @@
         <?php $this->load->view('admin/sidebar.php'); ?>
           <div id="content-wrapper">
             <div class="container-fluid">
+            
+
+
                 <!-- <?php //include'admin/breadcrumb.php'; ?> -->
-                  <form action="<?php base_url('v_tambah'); ?>" method="POST" enctype="multipart/form-data">
+                  <form action="<?php base_url("barang/update") ?>" method="post"
+              enctype="multipart/form-data">
+              
                     <div class="form-group row">
                       <label class="col-sm-2 col-form-label">Kode Barang</label>
                       <div class="col-sm-10">
-                        <input type="text" name="kdbarang" class="form-control" id="inputKodeBarang" placeholder="Kode Barang">
+                        <input type="text" name="kdbarang" class="form-control" id="inputKodeBarang" placeholder="Kode Barang" value="<?php echo $barang->kdbarang ?>">
                       </div>
                     </div>
                     <div class="form-group row">
                       <label class="col-sm-2 col-form-label">Nama Barang</label>
                       <div class="col-sm-10">
-                        <input type="text" name="nama" class="form-control" id="inputNamaBarang" placeholder="Nama Barang">
+                        <input type="text" name="nama" class="form-control" id="inputNamaBarang" placeholder="Nama Barang" value="<?php echo $barang->nama ?>">
                       </div>
                     </div>
                     <div class="form-group row">
                       <label class="col-sm-2 col-form-label">Deskripsi</label>
                       <div class="col-sm-10">
-                        <input type="text" name="deskripsi" class="form-control" id="inputDeskripsi" placeholder="Deskripsi">
+                        <input type="text" name="deskripsi" class="form-control" id="inputDeskripsi" placeholder="Deskripsi" value="<?php echo $barang->deskripsi ?>">
                       </div>
                     </div>
                     <div class="form-group row">
                       <label class="col-sm-2 col-form-label">Stok</label>
                       <div class="col-sm-10">
-                        <input type="text" name="stokbarang" class="form-control" id="inputStokBarang" placeholder="Stok Barang">
+                        <input type="text" name="stokbarang" class="form-control" id="inputStokBarang" placeholder="Stok Barang" value="<?php echo $barang->stokbarang ?>">
                       </div>
                     </div>
                     <div class="form-group row">
                       <label class="col-sm-2 col-form-label">Harga Barang</label>
                       <div class="col-sm-10">
-                        <input type="text" name="hargabarang" class="form-control" id="inputHargaBarang" placeholder="Harga Barang">
+                        <input type="text" name="hargabarang" class="form-control" id="inputHargaBarang" placeholder="Harga Barang" value="<?php echo $barang->hargabarang ?>">
                       </div>
                     </div>
                     <div class="form-group row">
                       <div class="col-sm-10" align="center">
-                        <button type="submit" class="btn btn-success">Save</button>
-                      
+                       <button type="submit" class="btn btn-success">Save</button>
+                      </div>
                       
                       <a href="<?php echo base_url('index.php/barang/'); ?>" class="btn btn-primary">Batal</a>
                     </div>

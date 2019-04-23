@@ -16,6 +16,7 @@
           <a class="dropdown-item" href="<?php echo site_url('barang'); ?>">Data Barang</a>
           <a class="dropdown-item" href="">Data Member</a>
           <a class="dropdown-item" href="">Data Admin</a>
+          <a class="dropdown-item" href="<?php echo site_url('BlankController'); ?>">Data Blank</a>
           
           
           <!-- <div class="dropdown-divider"></div>

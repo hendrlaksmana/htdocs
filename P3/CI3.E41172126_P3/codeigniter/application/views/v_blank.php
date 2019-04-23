@@ -25,37 +25,13 @@
                   <i class="fas fa-table"></i>Data Barang</div>
                     
                     <div class="card-body">
-                      <a href="<?php echo site_url('/barang/add'); ?>" class="btn btn-primary">Tambah Data</a>
+                      <a href="<?php echo base_url('index.php/barang/add'); ?>" class="btn btn-primary">Tambah Data</a>
 
                       <div class="table-responsive">
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                           <thead>
-                            <tr>
-                              <th>Kode Barang</th>
-                              <th>Nama Barang</th>
-                              <th>Deskripsi</th>
-                              <th>Stok Barang</th>
-                              <th>Harga Barang</th>
-                              <th>Action</th>
-                            </tr>
                           </thead>
-                          <tbody>
-                            <?php
-                              foreach ($list as $row) {
-                            ?>
-                             <tr>
-                               <td><?php echo $row->kdbarang."<br>"; ?></td>
-                               <td><?php echo $row->nama."<br>"; ?></td>
-                               <td><?php echo $row->deskripsi."<br>"; ?></td>
-                               <td><?php echo $row->stokbarang."<br>"; ?></td>
-                               <td><?php echo $row->hargabarang."<br>"; ?></td>
-                               <td><a href="<?php echo site_url('barang/update/'.$row->kdbarang); ?>" class="btn btn-success">Ubah</a>
-                                   <a href="<?php echo site_url('barang/delete/'.$row->kdbarang); ?>" class="btn btn-danger">Hapus</a></td>
-                             </tr>
-                            <?php  
-                                }
-                             ?>
-                          </tbody>
+                          <tbody></tbody>
                         </table>
                       </div>
                     </div>

@@ -35,7 +35,7 @@ $config['base_url'] = 'http://localhost/htdocs/P3/CI3.E41172126_P3/codeigniter/'
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
