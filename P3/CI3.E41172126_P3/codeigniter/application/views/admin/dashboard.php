@@ -8,6 +8,8 @@
         <?php include'sidebar.php'; ?><!-- Sidebar -->
           <div id="content-wrapper">
             <div class="container-fluid">
+
+              <h3> Selamat datang <?php echo $this->session->userdata("nama"); ?></h3>
               <?php include'breadcrumb.php'; ?><!-- Breadcrumbs-->
               <?php include'iconcard.php'; ?><!-- Icon Cards-->
               <?php include'areachart.php'; ?><!-- Area Chart Example-->

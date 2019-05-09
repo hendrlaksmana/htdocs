@@ -1,0 +1,11 @@
+<?php
+	class m_dataadmin extends CI_Model
+	{
+		private $_tables="data_admin";
+
+			function list_admin(){
+				// kalo di native : mysql_query("select *from barang")
+				return $this->db->get($this->_tables)->result();
+			}
+		}
+?>

@@ -4,6 +4,7 @@
 
   <body id="page-top">
      <?php include'navbar.php'; ?>
+     
       <div id="wrapper">    
         <?php include'sidebar.php'; ?><!-- Sidebar -->
           <div id="content-wrapper">

@@ -1,5 +1,14 @@
 <?php
 class M_barang extends CI_Model{
+
+	function __construct(){
+		parent::__construct();
+	
+		if($this->session->userdata('status') != "login"){
+			redirect(base_url("login"));
+		}
+	}
+
 	//buat fungsi utk ambil data
 	private $_table="barang";
 

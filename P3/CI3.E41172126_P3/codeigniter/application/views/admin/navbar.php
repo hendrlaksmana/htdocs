@@ -49,11 +49,14 @@
           <i class="fas fa-user-circle fa-fw"></i>
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+           <h3><?php echo $this->session->userdata("nama"); ?></h3>
+          
           <a class="dropdown-item" href="#">Settings</a>
           <a class="dropdown-item" href="#">Activity Log</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
-        </div>
+          <a class="dropdown-item" href="<?php echo base_url('login/logout'); ?>">Logout</a>
+          <!-- <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+                   -->        </div>
       </li>
     </ul>
 
