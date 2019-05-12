@@ -2,10 +2,10 @@
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+        <div class="sidebar-brand-icon">
+          <img class="mr-3" src="assets/sumber_makmur/putih.png" style="padding: 10px;" alt="Generic placeholder image" height="70" width="70">
         </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        <div class="sidebar-brand-text mx-3">Sumber Makmur</div>
       </a>
 
       <!-- Divider -->
