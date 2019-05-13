@@ -1,47 +1,49 @@
 <?php
-	 class c_barang extends CI_Controller
+	 class c_admin extends CI_Controller
 	 {
 
 	 	function __construct()
 	 	{
 	 		parent :: __construct();
 	 		if($this->session->userdata('status') != "login"){
-			redirect(base_url("login_adm"));
+			redirect(base_url("index.php/admin/login"));
 		}
-	 		$this->load->model("m_barang");
-	 			$this->load->helper('url');
+	 		//load class barang_model
+	 		$this->load->model("m_admin");
+	 		$this->load->helper('url');
+	 		//load class form validasi
+	 		$this->load->library("form_validation");
 	 	}
 	 	
 	 	function index()
 	 	{
-	 		$data['produk']=$this->m_barang->tampil_data();
-	 		$this->load->view("admin/v_barang",$data);
+	 		//load dari model
+	 		//$data['Judul']="Ini adalah Judul";
+	 		$this->load->model("m_admin");
+
+	 		//load dari view
+	 		$data['item']=$this->m_barang->list_admin();
+	 		$this->load->view("admin/v_admin",$data);
 	 	}
 
-	 	function tambah()
-	 	{
-	 		$this->load->view("admin/v_tambahbarang");
-	 	}
+	 	function tambah(){
 
-	 	function tambah_aksi(){
-		$nama_produk = $this->input->post('nama_produk');
-		$kategori = $this->input->post('kategori');
-		$nama_file = $this->input->post('nama_file');
-		$deskripsi = $this->input->post('deskripsi');
-		$tanggal = $this->input->post('tanggal');
-		$harga = $this->input->post('harga');
- 
-		$data = array(
-			'nama_produk' => $nama_produk,
-			'kategori' => $kategori,
-			'nama_file' => $nama_file,
-			'deskripsi' => $deskripsi,
-			'tanggal' => $tanggal,
-			'harga' => $harga
-			);
-		$this->m_data->input_data($data,'produk');
-		redirect('admin/c_barang');
-	}
+	 		$barang= $this ->m_barang;
+	 		//membuat variabel
+	 		$this->load->view("admin/v_tambah");
+	 		
+	 		$validasi=$this->form_validation;
+
+	 		$validasi->set_rules($barang->rules());
+
+	 		if ($validasi ->run()) {
+
+	 			//menyimpan data ke database
+	 			$barang->save();
+	 			redirect('admin/barang');
+	 		}
+
+	 	}
 
 	 	//membuat fungsi edit, cek di adress /edit
 	 	function edit($id_barang){

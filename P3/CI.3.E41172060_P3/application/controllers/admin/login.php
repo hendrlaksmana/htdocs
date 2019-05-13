@@ -29,7 +29,7 @@ class login extends CI_Controller{
  
 			$this->session->set_userdata($data_session);
  
-			redirect(base_url("index.php/admin/sesi_login"));
+			redirect(base_url("index.php/admin/Dashboard"));
  
 		}else{
 			echo "Username dan password salah !";
