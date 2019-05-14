@@ -64,7 +64,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu :</h6>
             <a class="collapse-item" href="<?php echo base_url('admin/c_admin') ?>">Data Admin</a>
-            <a class="collapse-item" href="#">Data User</a>
+            <a class="collapse-item" href="<?php echo base_url('admin/c_member') ?>">Data Member</a>
           </div>
         </div>
       </li>
