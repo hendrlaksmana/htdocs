@@ -49,7 +49,7 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu :</h6>
-            <a class="collapse-item" href="<?php base_url('admin/c_barang') ?>">Data Barang</a>
+            <a class="collapse-item" href="<?php echo base_url('admin/c_barang') ?>">Data Barang</a>
           </div>
         </div>
       </li>
@@ -63,7 +63,7 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu :</h6>
-            <a class="collapse-item" href="#">Data Admin</a>
+            <a class="collapse-item" href="<?php echo base_url('admin/c_admin') ?>">Data Admin</a>
             <a class="collapse-item" href="#">Data User</a>
           </div>
         </div>

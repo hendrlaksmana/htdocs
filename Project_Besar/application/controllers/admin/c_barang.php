@@ -39,45 +39,49 @@
 			'tanggal' => $tanggal,
 			'harga' => $harga
 			);
-		$this->m_data->input_data($data,'produk');
+		$this->m_barang->input_data($data,'produk');
 		redirect('admin/c_barang');
 	}
 
 	 	//membuat fungsi edit, cek di adress /edit
-	 	function edit($id_barang){
-	 		$where = array('id_barang' => $id_barang);
-			$data['barang'] = $this->m_barang->edit_barang($where,'barang')->result();
-			$this->load->view("admin/v_edit",$data);
+	 	function edit($id_produk){
+	 		$where = array('id_produk' => $id_produk);
+			$data['produk'] = $this->m_barang->edit_data($where,'produk')->result();
+			$this->load->view("admin/v_editbarang",$data);
 	 	}
 
-	 	//membuat fungsi hapus, cek di adress /hapus
-	 	function delete($id_barang){
-	 		$where = array('id_barang' => $id_barang);
-			$this->m_barang->hapus_data($where,'barang');
-			redirect('admin/barang');
-	 	}
-
-	 	function update(){
-			$id_barang = $this->input->post('id_barang');
-			$nama = $this->input->post('nama');
+			function update(){
+			$id_produk = $this->input->post('id_produk');
+			$nama_produk = $this->input->post('nama_produk');
+			$kategori = $this->input->post('kategori');
+			$nama_file = $this->input->post('nama_file');
 			$deskripsi = $this->input->post('deskripsi');
-			$stok = $this->input->post('stok');
+			$tanggal = $this->input->post('tanggal');
 			$harga = $this->input->post('harga');
 		 
 			$data = array(
-				'nama' => $nama,
+				'nama_produk' => $nama_produk,
+				'kategori' => $kategori,
+				'nama_file' => $nama_file,
 				'deskripsi' => $deskripsi,
-				'stok' => $stok,
+				'tanggal' => $tanggal,
 				'harga' => $harga
 			);
 		 
 			$where = array(
-				'id_barang' => $id_barang
+				'id_produk' => $id_produk
 			);
 		 
-			$this->m_barang->update_data($where,$data,'barang');
-			redirect('admin/barang');
+			$this->m_barang->update_data($where,$data,'produk');
+			redirect('admin/c_barang');
 		}
+
+		//membuat fungsi hapus, cek di adress /hapus
+	 	function delete($id_produk){
+	 		$where = array('id_produk' => $id_produk);
+			$this->m_barang->hapus_data($where,'produk');
+			redirect('admin/c_barang');
+	 	}
 
 	 } 
  ?>

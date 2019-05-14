@@ -6,80 +6,75 @@
 	 	{
 	 		parent :: __construct();
 	 		if($this->session->userdata('status') != "login"){
-			redirect(base_url("index.php/admin/login"));
+			redirect(base_url("login_adm"));
 		}
-	 		//load class barang_model
 	 		$this->load->model("m_admin");
-	 		$this->load->helper('url');
-	 		//load class form validasi
-	 		$this->load->library("form_validation");
+	 			$this->load->helper('url');
 	 	}
 	 	
 	 	function index()
 	 	{
-	 		//load dari model
-	 		//$data['Judul']="Ini adalah Judul";
-	 		$this->load->model("m_admin");
-
-	 		//load dari view
-	 		$data['item']=$this->m_barang->list_admin();
+	 		$data['dataadmin']=$this->m_admin->tampil_data();
 	 		$this->load->view("admin/v_admin",$data);
 	 	}
 
-	 	function tambah(){
-
-	 		$barang= $this ->m_barang;
-	 		//membuat variabel
-	 		$this->load->view("admin/v_tambah");
-	 		
-	 		$validasi=$this->form_validation;
-
-	 		$validasi->set_rules($barang->rules());
-
-	 		if ($validasi ->run()) {
-
-	 			//menyimpan data ke database
-	 			$barang->save();
-	 			redirect('admin/barang');
-	 		}
-
+	 	function tambah()
+	 	{
+	 		$this->load->view("admin/v_tambahadmin");
 	 	}
+
+	 	function tambah_aksi(){
+		$nama = $this->input->post('nama');
+		$username = $this->input->post('username');
+		$password = $this->input->post('password');
+		$level = $this->input->post('level');
+ 
+		$data = array(
+			'nama' => $nama,
+			'username' => $username,
+			'password' => $password,
+			'level' => $level
+			);
+
+		$this->m_admin->input_data($data,'dataadmin');
+		redirect('admin/c_admin');
+	}
 
 	 	//membuat fungsi edit, cek di adress /edit
-	 	function edit($id_barang){
-	 		$where = array('id_barang' => $id_barang);
-			$data['barang'] = $this->m_barang->edit_barang($where,'barang')->result();
-			$this->load->view("admin/v_edit",$data);
+	 	function edit($id_admin){
+	 		$where = array('id_admin' => $id_admin);
+			$data['dataadmin'] = $this->m_admin->edit_data($where,'dataadmin')->result();
+			$this->load->view("admin/v_editadmin",$data);
 	 	}
 
-	 	//membuat fungsi hapus, cek di adress /hapus
-	 	function delete($id_barang){
-	 		$where = array('id_barang' => $id_barang);
-			$this->m_barang->hapus_data($where,'barang');
-			redirect('admin/barang');
-	 	}
-
-	 	function update(){
-			$id_barang = $this->input->post('id_barang');
+			function update(){
+			$id_admin = $this->input->post('id_admin');
 			$nama = $this->input->post('nama');
-			$deskripsi = $this->input->post('deskripsi');
-			$stok = $this->input->post('stok');
-			$harga = $this->input->post('harga');
+			$username = $this->input->post('username');
+			$password = $this->input->post('password');
+			$level = $this->input->post('level');
 		 
 			$data = array(
 				'nama' => $nama,
-				'deskripsi' => $deskripsi,
-				'stok' => $stok,
-				'harga' => $harga
+				'username' => $username,
+				'password' => $password,
+				'level' => $level
 			);
 		 
 			$where = array(
-				'id_barang' => $id_barang
+				'id_admin' => $id_admin
 			);
 		 
-			$this->m_barang->update_data($where,$data,'barang');
-			redirect('admin/barang');
+			$this->m_admin->update_data($where,$data,'dataadmin');
+			redirect('admin/c_admin');
 		}
+
+		//membuat fungsi hapus, cek di adress /hapus
+	 	function delete($id_admin){
+	 		$where = array('id_admin' => $id_admin);
+			$this->m_admin->hapus_data($where,'dataadmin');
+			redirect('admin/c_admin');
+	 	}
 
 	 } 
  ?>

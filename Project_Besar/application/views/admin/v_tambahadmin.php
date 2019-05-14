@@ -31,47 +31,34 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Tambah Barang</h1>
+            <h1 class="h3 mb-0 text-gray-800">Tambah Admin</h1>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Tambah Data</a>
           </div>
 
           <!-- Content -->
-          <form action="<?php echo base_url('admin/c_barang/tambah_aksi'); ?>" method="POST" enctype="multipart/form-data" style="margin-left: 20px;margin-top: 15px;margin-right: 500px;">
+          <form action="<?php echo base_url('admin/c_admin/tambah_aksi'); ?>" method="POST" enctype="multipart/form-data" style="margin-left: 20px;margin-top: 15px;margin-right: 500px;">
           
           <div class="form-group">
-            <label for="nama_produk" class="col-sm-3 col-form-label">Nama Produk</label>
-            <input type="text" class="form-control" id="exampleInput" placeholder="Nama Produk" name="nama_produk">
+            <label for="nama" class="col-sm-3 col-form-label">Nama</label>
+            <input type="text" class="form-control" id="exampleInput" placeholder="Nama" name="nama">
+          </div>
+          
+          <div class="form-group">
+            <label for="username" class="col-sm-3 col-form-label">Username</label>
+            <input type="text" class="form-control" id="exampleInput" aria-describedby="emailHelp" name="username">
+          </div>
+          
+          <div class="form-group">
+            <label for="deskripsi" class="col-sm-3 col-form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInput" placeholder="Password" name="password">
           </div>
 
           <div class="form-group">
-            <label for="kategori" class="col-sm-3 col-form-label">Kategori</label>
-            <select name="kategori">
-              <option value="alat pertanian">Alat Pertanian</option>
-              <option value="benih">Benih</option>
-              <option value="bibit">Bibit</option>
-              <option value="pupuk">Pupuk</option>
+            <label for="Level" class="col-sm-3 col-form-label">Level</label>
+            <select name="level">
+              <option value="superadmin">Super Admin</option>
+              <option value="admin">Admin</option>
             </select>
-
-          </div>
-          
-          <div class="form-group">
-            <label for="gambar" class="col-sm-3 col-form-label">Gambar</label>
-            <input type="file" class="form-control" id="exampleInput" aria-describedby="emailHelp" name="nama_file">
-          </div>
-          
-          <div class="form-group">
-            <label for="deskripsi" class="col-sm-3 col-form-label">Deskripsi</label>
-            <input type="text" class="form-control" id="exampleInput" placeholder="Deskripsi" name="deskripsi">
-          </div>
-
-          <div class="form-group">
-            <label for="tanggal" class="col-sm-3 col-form-label">Tanggal</label>
-            <input type="date" class="form-control" id="exampleInput" aria-describedby="emailHelp" name="tanggal">
-          </div>
-          
-          <div class="form-group">
-            <label for="harga" class="col-sm-3 col-form-label">Harga</label>
-            <input type="text" class="form-control" id="exampleInput" placeholder="Harga" name="harga">
           </div>
   
           <button style="margin-bottom: 15px;" type="submit" class="btn btn-primary" value="tambah" name="save">Save</button>

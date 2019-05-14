@@ -32,7 +32,7 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Data Barang</h1>
-            <a href="<?php echo base_url('admin/c_barang/tambah') ?>" >Tambah Data</a>
+            <a href="<?php echo base_url('admin/c_admin/tambah') ?>" >Tambah Data</a>
           </div>
 
           <!-- Content -->
@@ -41,21 +41,23 @@
           <thead>
             <tr>
               <th scope="col">ID</th>
-              <th scope="col" style="width: 200px;">Nama Produk</th>
-              <th scope="col">Tanggal</th>
-              <th scope="col">Harga</th>
+              <th scope="col" style="width: 200px;">Nama Admin</th>
+              <th scope="col">Username</th>
+              <th scope="col">Password</th>
+              <th scope="col">Level</th>
               <th scope="col">Aksi</th>
             </tr>
           </thead>
           <tbody>
-            <?php foreach($produk as $row):?>
+            <?php foreach($dataadmin as $row):?>
             <tr>
-              <th scope="row"> <?php echo $row->id_produk; ?></th>
-              <td><?php echo $row->nama_produk; ?></td>
-              <td><?php echo $row->tanggal; ?></td>
-              <td><?php echo $row->harga; ?></td>
-              <td><?php echo anchor('admin/c_barang/edit/'.$row->id_produk,'Edit'); ?>
-                  <?php echo anchor('admin/c_barang/delete/'.$row->id_produk,'Hapus'); ?></td>
+              <th scope="row"> <?php echo $row->id_admin; ?></th>
+              <td><?php echo $row->nama; ?></td>
+              <td><?php echo $row->username; ?></td>
+              <td><?php echo $row->password; ?></td>
+              <td><?php echo $row->level; ?></td>
+              <td><?php echo anchor('admin/c_admin/edit/'.$row->id_admin,'Edit'); ?>
+                  <?php echo anchor('admin/c_admin/delete/'.$row->id_admin,'Hapus'); ?></td>
             </tr>
             <?php endforeach; ?>
           </tbody>

@@ -31,42 +31,32 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Data Barang</h1>
-            <a href="<?php echo base_url('admin/c_barang/tambah') ?>" >Tambah Data</a>
+            <h1 class="h3 mb-0 text-gray-800">Edit Barang</h1>
           </div>
 
           <!-- Content -->
+          <?php foreach($dataadmin as $row){ ?>
+          <form action="<?php echo base_url(). 'admin/c_admin/update'; ?>" method="POST" enctype="multipart/form-data" style="margin-left: 20px;margin-top: 15px;margin-right: 500px;">
+          
+          <div class="form-group">
+            <input type="text" class="form-control" id="exampleInput" placeholder="Nama" name="nama" value="<?php echo $row->nama ?>">
+          </div>
+          
+          <div class="form-group">
+            <input type="text" class="form-control" id="exampleInput" placeholder="Username" name="username"value="<?php echo $row->username ?>">
+          </div>
+          
+          <div class="form-group">
+            <input type="text" class="form-control" id="exampleInput" placeholder="Password" name="password" value="<?php echo $row->password ?>">
+          </div>
 
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">ID</th>
-              <th scope="col" style="width: 200px;">Nama Produk</th>
-              <th scope="col">Tanggal</th>
-              <th scope="col">Harga</th>
-              <th scope="col">Aksi</th>
-            </tr>
-          </thead>
-          <tbody>
-            <?php foreach($produk as $row):?>
-            <tr>
-              <th scope="row"> <?php echo $row->id_produk; ?></th>
-              <td><?php echo $row->nama_produk; ?></td>
-              <td><?php echo $row->tanggal; ?></td>
-              <td><?php echo $row->harga; ?></td>
-              <td><?php echo anchor('admin/c_barang/edit/'.$row->id_produk,'Edit'); ?>
-                  <?php echo anchor('admin/c_barang/delete/'.$row->id_produk,'Hapus'); ?></td>
-            </tr>
-            <?php endforeach; ?>
-          </tbody>
-        </table>
-
-          <!-- End of Content -->
-
-        </div>
-        <!-- /.container-fluid -->
-
-      </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="exampleInput" name="level" value="<?php echo $row->level ?>">
+          </div>
+  
+          <button style="margin-bottom: 15px;" type="submit" class="btn btn-primary" value="simpan" name="save">Save</button>
+        </form>
+        <?php } ?>
       <!-- End of Main Content -->
 
       <!-- Footer -->

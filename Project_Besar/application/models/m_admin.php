@@ -1,9 +1,9 @@
 <?php
-	class m_barang extends CI_Model
+	class m_admin extends CI_Model
 	{
 			function tampil_data(){
 				// kalo di native : mysql_query("select *from barang")
-				return $this->db->get('produk')->result();
+				return $this->db->get('dataadmin')->result();
 			}
 
 			function input_data($data,$table){
