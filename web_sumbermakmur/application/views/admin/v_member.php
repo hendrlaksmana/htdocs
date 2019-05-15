@@ -59,7 +59,7 @@
               <td><?php echo $row->no_telp; ?></td>
               <td><?php echo $row->email; ?></td>
               <td><?php echo $row->username; ?></td>
-              <td><?php echo $row->password; ?></td>
+              <td>***</td>
               <td><?php echo anchor('admin/c_member/edit/'.$row->id_member,'Edit'); ?>
                   <?php echo anchor('admin/c_member/delete/'.$row->id_member,'Hapus'); ?></td>
             </tr>

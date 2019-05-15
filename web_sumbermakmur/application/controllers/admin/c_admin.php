@@ -32,7 +32,7 @@
 		$data = array(
 			'nama' => $nama,
 			'username' => $username,
-			'password' => $password,
+			'password' => md5($password),
 			'level' => $level
 			);
 

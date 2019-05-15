@@ -35,7 +35,7 @@
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu :</h6>
-            <a class="collapse-item" href="#">Data Artikel</a>
+            <a class="collapse-item" href="<?php echo base_url('index.php/admin/c_artikel') ?>">Data Artikel</a>
           </div>
         </div>
       </li>
@@ -86,7 +86,7 @@
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu :</h6>
-            <a class="collapse-item" href="#">Transaksi</a>
+            <a class="collapse-item" href="<?php echo base_url('index.php/admin/c_transaksi') ?>">Transaksi</a>
             <a class="collapse-item" href="#">Verifikasi</a>
           </div>
         </div>
