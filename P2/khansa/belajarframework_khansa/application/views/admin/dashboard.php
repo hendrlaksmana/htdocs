@@ -14,7 +14,7 @@
 
   <link href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet" >
 
-    <!-- Custom fonts for this template-->
+    <!-- Custom fonts for thi s template-->
     <link href="<?php echo base_url('assets/fontawesome-free/css/all.min.css') ?>" rel="stylesheet" type="text/css">
 
 <!-- Page level plugin CSS-->
