@@ -38,6 +38,10 @@
           <?php foreach($datamember as $row){ ?>
           <form action="<?php echo base_url(). 'index.php/admin/c_member/update'; ?>" method="POST" enctype="multipart/form-data" style="margin-left: 20px;margin-top: 15px;margin-right: 500px;">
           
+          <div class="form-group" hidden>
+            <input type="text" class="form-control" placeholder="Id Member" name="id_member" value="<?php echo $row->id_member ?>">
+          </div>
+
           <div class="form-group">
             <input type="text" class="form-control" id="exampleInput" placeholder="Nama" name="nama" value="<?php echo $row->nama ?>">
           </div>

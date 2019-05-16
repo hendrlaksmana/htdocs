@@ -47,7 +47,7 @@
 			$this->load->view("admin/v_editadmin",$data);
 	 	}
 
-			function update(){
+	 	function update(){
 			$id_admin = $this->input->post('id_admin');
 			$nama = $this->input->post('nama');
 			$username = $this->input->post('username');

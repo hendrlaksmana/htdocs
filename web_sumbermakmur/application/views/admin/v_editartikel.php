@@ -37,6 +37,10 @@
           <!-- Content -->
           <?php foreach($artikel as $row){ ?>
           <form action="<?php echo base_url(). 'index.php/admin/c_artikel/update'; ?>" method="POST" enctype="multipart/form-data" style="margin-left: 20px;margin-top: 15px;margin-right: 500px;">
+
+          <div class="form-group" hidden>
+            <input type="text" class="form-control" placeholder="Id Artikel" name="id_artikel" value="<?php echo $row->id_artikel ?>">
+          </div>
           
           <div class="form-group">
             <input type="text" class="form-control" id="exampleInput" placeholder="Judul" name="judul_artikel" value="<?php echo $row->judul_artikel ?>">

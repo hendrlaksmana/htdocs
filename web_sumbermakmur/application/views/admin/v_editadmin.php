@@ -36,25 +36,29 @@
 
           <!-- Content -->
           <?php foreach($dataadmin as $row){ ?>
-          <form action="<?php echo base_url(). 'index.php/admin/c_admin/update'; ?>" method="POST" enctype="multipart/form-data" style="margin-left: 20px;margin-top: 15px;margin-right: 500px;">
+          <form method="POST" action="<?php echo base_url(). 'index.php/admin/c_admin/update'; ?>" enctype="multipart/form-data" style="margin-left: 20px;margin-top: 15px;margin-right: 500px;">
           
-          <div class="form-group">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Nama" name="nama" value="<?php echo $row->nama ?>">
-          </div>
-          
-          <div class="form-group">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Username" name="username"value="<?php echo $row->username ?>">
-          </div>
-          
-          <div class="form-group">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Password" name="password" value="<?php echo $row->password ?>">
+          <div class="form-group" hidden>
+            <input type="text" class="form-control" placeholder="Id Admin" name="id_admin" value="<?php echo $row->id_admin ?>">
           </div>
 
           <div class="form-group">
-            <input type="text" class="form-control" id="exampleInput" name="level" value="<?php echo $row->level ?>">
+            <input type="text" class="form-control" placeholder="Nama" name="nama" value="<?php echo $row->nama ?>">
+          </div>
+          
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Username" name="username"value="<?php echo $row->username ?>">
+          </div>
+          
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Password" name="password" value="<?php echo $row->password ?>">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" name="level" value="<?php echo $row->level ?>">
           </div>
   
-          <button style="margin-bottom: 15px;" type="submit" class="btn btn-primary" value="simpan" name="save">Save</button>
+          <button style="margin-bottom: 15px;" type="submit" class="btn btn-primary" value="simpan">Save</button>
         </form>
         <?php } ?>
       <!-- End of Main Content -->

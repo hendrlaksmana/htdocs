@@ -38,6 +38,10 @@
           <?php foreach($produk as $row){ ?>
           <form action="<?php echo base_url(). 'index.php/admin/c_barang/update'; ?>" method="POST" enctype="multipart/form-data" style="margin-left: 20px;margin-top: 15px;margin-right: 500px;">
           
+          <div class="form-group" hidden>
+            <input type="text" class="form-control" placeholder="Id Barang" name="id_barang" value="<?php echo $row->id_barang ?>">
+          </div>
+
           <div class="form-group">
             <input type="text" class="form-control" id="exampleInput" placeholder="Nama Produk" name="nama_produk" value="<?php echo $row->nama_produk ?>">
           </div>
