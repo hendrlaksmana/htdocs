@@ -44,7 +44,7 @@
           </div>
           
           <div class="form-group">
-            <label for="username" class="col-sm-3 col-form-label">Foto</label>
+            <label for="foto" class="col-sm-3 col-form-label">Foto</label>
             <input type="file" class="form-control" id="exampleInput" aria-describedby="emailHelp" name="foto">
           </div>
           

@@ -53,7 +53,7 @@
               <td><?php echo $row->nama; ?></td>
               <td><?php echo $row->tanggal; ?></td>
               <td><?php echo $row->total_pembelian; ?></td>
-              <td><a href="<?php echo base_url('index.php/admin/c_detailtransaksi') ?>">Detail</a>
+              <td><?php echo anchor('admin/c_detailtransaksi/'.$row->id_transaksi,'Detail'); ?>
                   <?php echo anchor('admin/c_transaksi/delete/'.$row->id_transaksi,'Hapus'); ?></td>
             </tr>
             <?php endforeach; ?>

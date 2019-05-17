@@ -25,7 +25,7 @@
 
 	 	function tambah_aksi(){
 		$judul_artikel = $this->input->post('judul_artikel');
-		$foto = $this->input->post('foto');
+		$foto = $this->_uploadImage();
 		$deskripsi = $this->input->post('deskripsi');
 		$tanggal = $this->input->post('tanggal');
  
@@ -50,7 +50,13 @@
 			function update(){
 			$id_artikel = $this->input->post('id_artikel');
 			$judul_artikel = $this->input->post('judul_artikel');
-			$foto = $this->input->post('foto');
+			
+			if (!empty($_FILES["foto"]["name"])) {
+			    $this->foto = $this->_uploadImage();
+			} else {
+			    $this->foto = $post["old_image"];
+			}
+
 			$deskripsi = $this->input->post('deskripsi');
 			$tanggal = $this->input->post('tanggal');
 		 
@@ -75,6 +81,25 @@
 			$this->m_artikel->hapus_data($where,'artikel');
 			redirect('admin/c_artikel');
 	 	}
+
+	 	private function _uploadImage()
+		{
+		    $config['upload_path']          = './assets/upload/foto_produk/';
+		    $config['allowed_types']        = 'gif|jpg|png';
+		    $config['file_name']            = $_FILES['foto']['name'];
+		    $config['overwrite']			= true;
+		    $config['max_size']             = 1024; // 1MB
+		    // $config['max_width']            = 1024;
+		    // $config['max_height']           = 768;
+
+		    $this->load->library('upload', $config);
+
+		    if ($this->upload->do_upload('foto')) {
+		        return $this->upload->data("file_name");
+		    }
+		    
+		    return "default.jpg";
+		}
 
 	 } 
  ?>

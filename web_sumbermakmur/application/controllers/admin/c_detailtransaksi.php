@@ -12,7 +12,7 @@
 	 			$this->load->helper('url');
 	 	}
 	 	
-	 	function index()
+	 	function index($id_transaksi)
 	 	{
 	 		$where = array('id_transaksi' => $id_transaksi);
 	 		$data['detail_transaksi']=$this->m_detailtransaksi->tampil_data($where,'detail_transaksi')->result();
