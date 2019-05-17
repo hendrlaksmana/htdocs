@@ -27,7 +27,7 @@
 		$judul_artikel = $this->input->post('judul_artikel');
 		$foto = $this->_uploadImage();
 		$deskripsi = $this->input->post('deskripsi');
-		$tanggal = $this->input->post('tanggal');
+		$tanggal = date("Y-m-d H:i:s");
  
 		$data = array(
 			'judul_artikel' => $judul_artikel,

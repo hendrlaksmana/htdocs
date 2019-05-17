@@ -24,21 +24,19 @@
 <body class="bg-dark">
 
   <div class="container">
-    <div class="card card-login mx-auto mt-5">
-      <div class="card-header" align="center">
+    <div class="card card-login mx-auto mt-5" style="width: 70%;">
+      <div class="card-header" align="center" style="height: 140px;">
       <img src="<?php echo base_url('assets/sumber_makmur/logo.png')?>" style="height: 100px; width: 100px;"></div>
-      <div class="card-body">
+      <div class="card-body" style="margin-top: 5px;">
         <form action="<?php echo base_url('index.php/login_adm/aksi_login'); ?>" method="post">
           <div class="form-group">
             <div class="form-label-group">
               <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required="required" autofocus="autofocus" name="username">
-              <label for="inputEmail">Username</label>
             </div>
           </div>
           <div class="form-group">
             <div class="form-label-group">
               <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required" name="password">
-              <label for="inputPassword">Password</label>
             </div>
           </div>
           <div class="form-group">
