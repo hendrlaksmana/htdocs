@@ -47,15 +47,7 @@
           </div>
           
           <div class="form-group">
-            <input type="file" class="form-control" id="exampleInput" placeholder="foto" name="foto">
-          </div>
-          
-          <div class="form-group">
             <textarea class="ckeditor" name="deskripsi"><?php echo $row->deskripsi ?></textarea>
-          </div>
-
-          <div class="form-group">
-            <input type="date" class="form-control" id="exampleInput" name="tanggal" value="<?php echo $row->tanggal ?>">
           </div>
   
           <button style="margin-bottom: 15px;" type="submit" class="btn btn-primary" value="simpan" name="save">Save</button>

@@ -50,19 +50,11 @@
 			function update(){
 			$id_artikel = $this->input->post('id_artikel');
 			$judul_artikel = $this->input->post('judul_artikel');
-			
-			if (!empty($_FILES["foto"]["name"])) {
-			    $this->foto = $this->_uploadImage();
-			} else {
-			    $this->foto = $post["old_image"];
-			}
-
 			$deskripsi = $this->input->post('deskripsi');
-			$tanggal = $this->input->post('tanggal');
+			$tanggal = date("Y-m-d H:i:s");
 		 
 			$data = array(
 				'judul_artikel' => $judul_artikel,
-				'foto' => $foto,
 				'deskripsi' => $deskripsi,
 				'tanggal' => $tanggal
 			);
@@ -85,7 +77,7 @@
 	 	private function _uploadImage()
 		{
 		    $config['upload_path']          = './assets/upload/foto_produk/';
-		    $config['allowed_types']        = 'gif|jpg|png';
+		    $config['allowed_types']        = 'gif|jpg|png|jpeg';
 		    $config['file_name']            = $_FILES['foto']['name'];
 		    $config['overwrite']			= true;
 		    $config['max_size']             = 1024; // 1MB
