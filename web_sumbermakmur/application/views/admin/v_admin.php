@@ -30,20 +30,20 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Data Barang</h1>
-            <a href="<?php echo base_url('index.php/admin/c_admin/tambah') ?>" >Tambah Data</a>
-          </div>
 
           <!-- Content -->
-
-        <table class="table table-striped">
-          <thead>
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h4 class="m-0 font-weight-bold text-primary">Data Admin <a class="btn btn-primary" style="float: right;" href="<?php echo base_url('index.php/admin/c_admin/tambah') ?>">Tambah Data</a></h4>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
             <tr>
               <th scope="col">ID</th>
               <th scope="col" style="width: 200px;">Nama Admin</th>
               <th scope="col">Username</th>
-              <th scope="col">Password</th>
               <th scope="col">Level</th>
               <th scope="col">Aksi</th>
             </tr>
@@ -54,7 +54,6 @@
               <th scope="row"> <?php echo $row->id_admin; ?></th>
               <td><?php echo $row->nama; ?></td>
               <td><?php echo $row->username; ?></td>
-              <td><?php echo $row->password; ?></td>
               <td><?php echo $row->level; ?></td>
               <td><?php echo anchor('admin/c_admin/edit/'.$row->id_admin,'Edit'); ?>
                   <?php echo anchor('admin/c_admin/delete/'.$row->id_admin,'Hapus'); ?></td>
@@ -62,6 +61,9 @@
             <?php endforeach; ?>
           </tbody>
         </table>
+        </div>
+            </div>
+          </div>
 
           <!-- End of Content -->
 

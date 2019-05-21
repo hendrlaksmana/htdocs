@@ -30,14 +30,16 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Data Transaksi</h1>
-          </div>
 
           <!-- Content -->
-
-        <table class="table table-striped">
-          <thead>
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h4 class="m-0 font-weight-bold text-primary">Data Transaksi</h4>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
             <tr>
               <th scope="col">Id Transaksi</th>
               <th scope="col" style="width: 200px;">Nama</th>
@@ -59,6 +61,9 @@
             <?php endforeach; ?>
           </tbody>
         </table>
+        </div>
+            </div>
+          </div>
 
           <!-- End of Content -->
 

@@ -30,15 +30,17 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Data Member</h1>
-            <a href="<?php echo base_url('index.php/admin/c_member/tambah') ?>" >Tambah Data</a>
-          </div>
 
           <!-- Content -->
 
-        <table class="table table-striped">
-          <thead>
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h4 class="m-0 font-weight-bold text-primary">Data Member<a class="btn btn-primary" style="float: right;" href="<?php echo base_url('index.php/admin/c_member/tambah') ?>">Tambah Data</a></h4>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
             <tr>
               <th scope="col">ID</th>
               <th scope="col" style="width: 200px;">Nama Member</th>
@@ -46,7 +48,6 @@
               <th scope="col">No Telp</th>
               <th scope="col">E-mail</th>
               <th scope="col">Username</th>
-              <th scope="col">Password</th>
               <th scope="col">Aksi</th>
             </tr>
           </thead>
@@ -59,13 +60,15 @@
               <td><?php echo $row->no_telp; ?></td>
               <td><?php echo $row->email; ?></td>
               <td><?php echo $row->username; ?></td>
-              <td>***</td>
               <td><?php echo anchor('admin/c_member/edit/'.$row->id_member,'Edit'); ?>
                   <?php echo anchor('admin/c_member/delete/'.$row->id_member,'Hapus'); ?></td>
             </tr>
             <?php endforeach; ?>
           </tbody>
         </table>
+        </div>
+            </div>
+          </div>
 
           <!-- End of Content -->
 
