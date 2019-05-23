@@ -1,4 +1,4 @@
-<div class="site-navbar-top"  style="background-color: white">
+<div class="site-navbar-top"  style="color: green;">
         <div class="container">
           <div class="row align-items-center">
 
@@ -10,8 +10,9 @@
             </div>
 
             <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
-              <div class="site-logo">
-                <h2>SumberMakmur</h2>
+              <div class="site-logo" style="font-family: SFMono-Regular">
+                <h2>  TOKO PERTANIAN</h2>
+                  <h4>Sumber Makmur</h4>
               </div>
             </div>
 
@@ -35,14 +36,14 @@
         </div>
       </div>
 
-<nav class="site-navigation text-right text-md-center" role="navigation">
+<nav class="site-navigation text-right text-md-center text-bold" role="navigation" style="background-color: #7CB238;">
         <div class="container">
           <ul class="site-menu js-clone-nav d-none d-md-block">
-            <li class="active">
-              <a href="<?php echo base_url() ?>">Home</a>
+            <li class="activ">
+              <a href="<?php echo base_url() ?>" style="color:white;font-size: 18px">Home</a>
             </li>
             <li class="has-children">
-              <a href="#">Katalog</a>
+              <a href="#" style="color:white;font-size: 18px">Katalog</a>
               <ul class="dropdown">
                 <li><a href="#">Alat Pertanian</a></li>
                 <li><a href="#">Benih</a></li>
@@ -50,9 +51,9 @@
                 <li><a href="#">Pupuk</a></li>
               </ul>
             </li>
-            <li><a href="#">Informasi Seputar Pertanian</a></li>
-            <li><a href="#">Cara Pembayaran</a></li>
-            <li><a href="#">Tentang Toko</a></li>
+            <li><a href="<?php echo base_url('index.php/member/c_artikel') ?>"style="color:white;font-size: 18px">Informasi Seputar Pertanian</a></li>
+            <li><a href="<?php echo base_url('index.php/member/c_carabayar') ?>"style="color:white;font-size: 18px">Cara Pembayaran</a></li>
+            <li><a href="#" style="color:white;font-size: 18px">Tentang Toko</a></li>
             
           </ul>
         </div>

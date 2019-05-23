@@ -6,6 +6,16 @@
 				return $this->db->get('artikel')->result();
 			}
 
+				function show(){
+				$this->db->select('*');
+				$this->db->from('artikel');
+				$this->db->where('id_artikel');
+				
+				
+				$query = $this->db->get();
+				return $query->result();
+			}
+
 			function input_data($data,$table){
 				$this->db->insert($table,$data);
 			}
