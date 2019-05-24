@@ -88,7 +88,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu :</h6>
             <a class="collapse-item" href="<?php echo base_url('index.php/admin/c_transaksi') ?>">Transaksi</a>
-            <a class="collapse-item" href="#">Verifikasi</a>
+            <a class="collapse-item" href="<?php echo base_url('index.php/admin/c_verifikasi') ?>">Verifikasi</a>
           </div>
         </div>
       </li>
@@ -194,7 +194,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu :</h6>
             <a class="collapse-item" href="<?php echo base_url('index.php/admin/c_transaksi') ?>">Transaksi</a>
-            <a class="collapse-item" href="#">Verifikasi</a>
+            <a class="collapse-item" href="<?php echo base_url('index.php/admin/c_verifikasi') ?>">Verifikasi</a>
           </div>
         </div>
       </li>
