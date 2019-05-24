@@ -40,7 +40,7 @@
           
           <div class="form-group">
             <label for="nama" class="col-sm-3 col-form-label">Nama</label>
-            <input type="text" class="form-control" id="exampleInput" placeholder="Nama" name="nama">
+            <input type="text" class="form-control" id="exampleInput" name="nama">
           </div>
           
           <div class="form-group">
@@ -50,7 +50,7 @@
           
           <div class="form-group">
             <label for="deskripsi" class="col-sm-3 col-form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInput" placeholder="Password" name="password">
+            <input type="password" class="form-control" id="exampleInput" name="password">
           </div>
 
           <div class="form-group">

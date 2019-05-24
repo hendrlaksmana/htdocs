@@ -11,6 +11,9 @@
 			}
 
 			function hapus_data($where,$table){
+				$this->db->select('*');
+				$this->db->from('transaksi');
+				$this->db->join('detail_transaksi','detail_transaksi.id_transaksi=transaksi.id_transaksi');
 				$this->db->where($where);
 				$this->db->delete($table);
 			}
