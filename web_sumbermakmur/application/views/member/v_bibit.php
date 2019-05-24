@@ -13,8 +13,8 @@
 
     <div class="site-section site-section-sm site-blocks-1">
  		 <div class="container">
- 	           ini artikel detail
-			</div>
+ 		 	<h4 style="padding-left: 30px;"> Bibit </h4>
+    
  		 </div>
 	</div>
 

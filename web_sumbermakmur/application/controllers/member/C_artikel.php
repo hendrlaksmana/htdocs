@@ -16,9 +16,8 @@
 
 	 	function show()
 	 	{
-	 	//	$where = array('id_artikel' => $id_artikel);
-			$data['artikel'] = $this->m_artikel/*->show($where,'artikel')->result()*/;
-			$this->load->view("member/v_artikelshow",$data);
+	 		$data['artikel']=$this->m_artikel->tampil_data();
+	 		$this->load->view("member/v_artikelshow",$data);
 	 	
 	 	}
 	 }

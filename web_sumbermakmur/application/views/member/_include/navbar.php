@@ -45,15 +45,15 @@
             <li class="has-children">
               <a href="#" style="color:white;font-size: 18px">Katalog</a>
               <ul class="dropdown">
-                <li><a href="#">Alat Pertanian</a></li>
-                <li><a href="#">Benih</a></li>
-                <li><a href="#">Bibit</a></li>
-                <li><a href="#">Pupuk</a></li>
+                <li><a href="<?php echo base_url('index.php/member/c_alat') ?>">Alat Pertanian</a></li>
+                <li><a href="<?php echo base_url('index.php/member/c_benih') ?>">Benih</a></li>
+                <li><a href="<?php echo base_url('index.php/member/c_bibit') ?>">Bibit</a></li>
+                <li><a href="<?php echo base_url('index.php/member/c_pupuk') ?>">Pupuk</a></li>
               </ul>
             </li>
             <li><a href="<?php echo base_url('index.php/member/c_artikel') ?>"style="color:white;font-size: 18px">Informasi Seputar Pertanian</a></li>
             <li><a href="<?php echo base_url('index.php/member/c_carabayar') ?>"style="color:white;font-size: 18px">Cara Pembayaran</a></li>
-            <li><a href="#" style="color:white;font-size: 18px">Tentang Toko</a></li>
+            <li><a href="<?php echo base_url('index.php/member/c_tentangtoko') ?>" style="color:white;font-size: 18px">Tentang Toko</a></li>
             
           </ul>
         </div>
