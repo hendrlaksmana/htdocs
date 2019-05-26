@@ -30,13 +30,17 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Edit Artikel</h1>
-          </div>
-
+        
           <!-- Content -->
+
+          <div class="card">
+            <div class="card-header" style="font-size: 25px;"><i class="far fa-newspaper"></i> &nbsp;
+              Edit Artikel
+            </div>
+            <div class="card-body">
+
           <?php foreach($artikel as $row){ ?>
-          <form action="<?php echo base_url(). 'index.php/admin/c_artikel/update'; ?>" method="POST" enctype="multipart/form-data" style="margin-left: 20px;margin-top: 15px;margin-right: 500px;">
+          <form action="<?php echo base_url(). 'index.php/admin/c_artikel/update'; ?>" method="POST" enctype="multipart/form-data">
 
           <div class="form-group" hidden>
             <input type="text" class="form-control" placeholder="Id Artikel" name="id_artikel" value="<?php echo $row->id_artikel ?>">
@@ -47,12 +51,18 @@
           </div>
           
           <div class="form-group">
-            <textarea class="ckeditor" name="deskripsi"><?php echo $row->deskripsi ?></textarea>
+            <textarea class="ckeditor" name="deskripsi" style="width: 80%;"><?php echo $row->deskripsi ?></textarea>
           </div>
-  
-          <button style="margin-bottom: 15px;" type="submit" class="btn btn-primary" value="simpan" name="save">Save</button>
+
+          <div class="tombol" style="float: right;">
+          <button style="width: 100px;" id="cancel" name="cancel" class="btn btn-danger" value="1">Batal</button>
+          <button style="width: 100px;margin-left: 10px;" type="submit" class="btn btn-primary" value="simpan" name="save">Save</button>
+        </div>
         </form>
         <?php } ?>
+
+      </div>
+    </div>
       <!-- End of Main Content -->
 
       <!-- Footer -->
