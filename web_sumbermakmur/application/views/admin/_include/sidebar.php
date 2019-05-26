@@ -102,9 +102,10 @@
         <div id="collapseReport" class="collapse" aria-labelledby="headingReport" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu :</h6>
-            <a class="collapse-item" href="#">Laporan Harian</a>
+            <a class="collapse-item" href="#">Laporan Transaksi</a>
+            <!--<a class="collapse-item" href="#">Laporan Harian</a>
             <a class="collapse-item" href="#">Laporan Bulanan</a>
-            <a class="collapse-item" href="#">Laporan Tahunan</a>
+            <a class="collapse-item" href="#">Laporan Tahunan</a>-->
           </div>
         </div>
       </li>
