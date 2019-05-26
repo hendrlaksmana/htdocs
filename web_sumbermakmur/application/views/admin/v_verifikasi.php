@@ -60,7 +60,7 @@
               <td><?php echo $row->email; ?></td>
               <td><?php echo $row->alamat; ?></td>
               <td><?php echo $row->no_telp; ?></td>
-              <td><?php echo $row->foto_transferbank; ?></td>
+              <td><img style="width: 100px;height: 100px;" src="<?php echo base_url() ?>assets/upload/transfer_bank/<?php echo $row->foto_transferbank ?>"></td>
               <td><?php echo anchor('admin/c_verifikasi/delete/'.$row->id_verifikasi,'Hapus'); ?></td>
             </tr>
             <?php endforeach; ?>
