@@ -37,7 +37,7 @@
 			'no_telp' => $no_telp,
 			'email' => $email,
 			'username' => $username,
-			'password' => $password
+			'password' => md5($password)
 			);
 
 		$this->m_member->input_data($data,'datamember');
@@ -58,15 +58,13 @@
 			$no_telp = $this->input->post('no_telp');
 			$email = $this->input->post('email');
 			$username = $this->input->post('username');
-			$password = $this->input->post('password');
 		 
 			$data = array(
 				'nama' => $nama,
 				'alamat' => $alamat,
 				'no_telp' => $no_telp,
 				'email' => $email,
-				'username' => $username,
-				'password' => $password
+				'username' => $username
 			);
 		 
 			$where = array(

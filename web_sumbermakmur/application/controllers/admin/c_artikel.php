@@ -78,7 +78,7 @@
 
 	 	private function _uploadImage()
 		{
-		    $config['upload_path']          = './assets/upload/foto_produk/';
+		    $config['upload_path']          = './assets/upload/artikel/';
 		    $config['allowed_types']        = 'gif|jpg|png|jpeg';
 		    $config['file_name']            = $_FILES['foto']['name'];
 		    $config['overwrite']			= true;

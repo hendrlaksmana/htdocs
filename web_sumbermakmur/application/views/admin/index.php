@@ -30,16 +30,17 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-          </div>
 
           <!-- Content Row -->
           <div class="row">
-
             <div class="card mb-3" style="max-width: 95%; margin-left: 10px;">
+
+              <div class="card-header py-3">
+                <h4 class="m-0 font-weight-bold text-primary">Dashboard</h4>
+              </div>
+
               <div class="row no-gutters">
-                <div class="col-md-6">
+                <div class="col-md-6" style="margin: 10px 10px 10px 10px;">
                   <img src="<?php echo base_url('assets/sumber_makmur/IMG20180924135402.jpg') ?>" class="card-img">
                 </div>
                 <div class="col-md-5">

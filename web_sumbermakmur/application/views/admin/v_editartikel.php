@@ -33,7 +33,7 @@
         
           <!-- Content -->
 
-          <div class="card">
+          <div class="card" style="width: 95%;">
             <div class="card-header" style="font-size: 25px;"><i class="far fa-newspaper"></i> &nbsp;
               Edit Artikel
             </div>
