@@ -13,8 +13,15 @@
 
     <div class="site-section site-section-sm site-blocks-1">
  		 <div class="container">
- 		 	<h4 style="padding-left: 30px;"> Alat Pertanian </h4>
-    
+ 		     
+          <h4> produk </h4>
+             <?php foreach($produk as $row){ ?>
+
+<?php echo $row->id_produk ?>
+        <?php } ?>
+
+              </tbody>
+           
  		 </div>
 	</div>
 

@@ -6,18 +6,23 @@
 				return $this->db->get('artikel')->result();
 			}
 
-				function show(){
+			/*	function show(){
 				$this->db->select('*');
 				$this->db->from('artikel');
 				$query = $this->db->get();
 				return $query->result();
-			}
+			}*/
 
 			function input_data($data,$table){
 				$this->db->insert($table,$data);
 			}
 
 			function edit_data($where,$table){		
+				return $this->db->get_where($table,$where);
+			}
+
+			//menampilkan artikel
+			function show_artikel($where,$table){		
 				return $this->db->get_where($table,$where);
 			}
 

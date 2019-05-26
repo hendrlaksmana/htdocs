@@ -15,7 +15,15 @@
       <div class="container">
         <div class="row align-items-start align-items-md-center justify-content-end">
           <div class="col-md-5 text-center text-md-left pt-5 pt-md-0">
-            <!-- Dasboard -->
+            <h2 class="mb-2" style="color:white">Produk Terbaru</h2>
+            <div class="intro-text text-center text-md-left">
+              <p class="mb-4" style="color:white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla. </p>
+              <p>
+                <a href="#" class="btn btn-sm btn-light">Shop Now</a>
+              </p>
+            </div>
+          </div>
+        </div>
             </div>
           </div>
         </div>

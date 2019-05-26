@@ -11,7 +11,7 @@
       
     </header>
 
-    <div class="site-section site-section-sm site-blocks-1">
+    <div class="site-section site-section-sm site-blocks-1" style="background-color: #f8f9fa">
  		 <div class="container">
  		 	<h4 style="padding-left: 30px;"> Cara Pembayaran </h4>
     <table class="table table-borderless" style="margin-top: 30px">
