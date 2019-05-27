@@ -20,7 +20,7 @@
               <div class="site-top-icons">
                 <ul>
                   <li><a href="<?php echo base_url('index.php/login_member/') ?>" class="btn btn-light">Login</a></li>
-                  <li><a href="#" class="btn btn-light">Daftar</a></li>
+                  <li><a href="<?php echo base_url('index.php/member/c_daftar') ?>" class="btn btn-light" class="btn btn-light">Daftar</a></li>
             
 <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
