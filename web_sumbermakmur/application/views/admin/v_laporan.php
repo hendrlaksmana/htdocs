@@ -34,7 +34,7 @@
           <!-- Content -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h4 class="m-0 font-weight-bold text-primary">Data Transaksi</h4>
+              <h4 class="m-0 font-weight-bold text-primary">Laporan</h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -49,16 +49,14 @@
             </tr>
           </thead>
           <tbody>
-            <?php foreach($transaksi as $row):?>
+            <?php foreach($laporan_transaksi as $row):?>
             <tr>
               <th scope="row"> <?php echo $row->id_transaksi; ?></th>
               <td><?php echo $row->nama; ?></td>
               <td><?php echo $row->tanggal; ?></td>
               <td><?php echo $row->total_pembelian; ?></td>
-              <td>
-                <?php echo anchor('admin/c_detailtransaksi/'.$row->id_transaksi,'Detail'); ?>&nbsp;|
-                <?php echo anchor('admin/c_transaksi/sukses/'.$row->id_transaksi,'Finalisasi'); ?>&nbsp;|
-                <?php echo anchor('admin/c_transaksi/delete/'.$row->id_transaksi,'Batal'); ?></td>
+              <td><?php echo anchor('admin/c_detailtransaksi/'.$row->id_transaksi,'Detail'); ?>
+                  <?php echo anchor('admin/c_transaksi/delete/'.$row->id_transaksi,'Hapus'); ?></td>
             </tr>
             <?php endforeach; ?>
           </tbody>

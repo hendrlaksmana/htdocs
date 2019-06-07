@@ -31,7 +31,7 @@
         <form action="<?php echo base_url('index.php/login_adm/aksi_login'); ?>" method="post">
           <div class="form-group">
             <div class="form-label-group">
-              <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required="required" autofocus="autofocus" name="username">
+              <input type="text" id="inputEmail" class="form-control" placeholder="Username" required="required" autofocus="autofocus" name="username">
             </div>
           </div>
           <div class="form-group">
@@ -49,9 +49,7 @@
           </div>
           <input class="btn btn-primary btn-block" type="submit" value="Login">
         </form>
-        <div class="text-center">
-          <a class="d-block small mt-3" href="">Register an Account</a>
-          <a class="d-block small" href="">Forgot Password?</a>
+        <div class="text-center" style="height: 15px">
         </div>
       </div>
     </div>
