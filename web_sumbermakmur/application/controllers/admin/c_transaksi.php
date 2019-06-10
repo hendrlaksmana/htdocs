@@ -21,13 +21,14 @@
 	 	function delete($id_transaksi){
 	 		$where = array('id_transaksi' => $id_transaksi);
 			$this->m_transaksi->hapus_data($where,'transaksi');
+			$this->m_transaksi->hapus_detail($where,'detail_transaksi');
 			redirect('admin/c_transaksi');
 	 	}
 
-	 	function detail()
+	 	function detail($id_transaksi)
 	 	{
 	 		$where = array('id_transaksi' => $id_transaksi);
-	 		$data['detail_transaksi']=$this->m_detailtransaksi->tampil_data($where,'detail_transaksi')->result();
+	 		$data['detail_transaksi'] = $this->m_transaksi->detailtrans($where,'detail_transaksi');
 	 		$this->load->view("admin/v_detailtransaksi",$data);
 	 	}
 

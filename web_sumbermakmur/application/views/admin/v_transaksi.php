@@ -56,7 +56,7 @@
               <td><?php echo $row->tanggal; ?></td>
               <td><?php echo $row->total_pembelian; ?></td>
               <td>
-                <?php echo anchor('admin/c_detailtransaksi/'.$row->id_transaksi,'Detail'); ?>&nbsp;|
+                <?php echo anchor('admin/c_transaksi/detail/'.$row->id_transaksi,'Detail'); ?>&nbsp;|
                 <?php echo anchor('admin/c_transaksi/sukses/'.$row->id_transaksi,'Finalisasi'); ?>&nbsp;|
                 <?php echo anchor('admin/c_transaksi/delete/'.$row->id_transaksi,'Batal'); ?></td>
             </tr>

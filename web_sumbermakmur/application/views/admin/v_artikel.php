@@ -56,7 +56,8 @@
               <td><?php echo $row->penulis; ?></td>
               <td><?php echo $row->tanggal; ?></td>
               <td><?php echo anchor('admin/c_artikel/edit/'.$row->id_artikel,'Edit'); ?>
-                  <?php echo anchor('admin/c_artikel/delete/'.$row->id_artikel,'Hapus'); ?></td>
+                  <?php echo anchor('admin/c_artikel/delete/'.$row->id_artikel,'Hapus'); ?>
+                  <a onclick="deleteConfirm('<?php echo site_url('admin/c_artikel/delete/'.$row->id_artikel) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a></td>
             </tr>
             <?php endforeach; ?>
           </tbody>
@@ -92,6 +93,15 @@
   <?php $this->load->view("admin/_include/logout_modal.php") ?>
 
   <?php $this->load->view("admin/_include/js.php") ?>
+  
+  <?php $this->load->view("admin/_include/modal/artikel_hapus.php") ?>
+
+  <script>
+function deleteConfirm(url){
+  $('#btn-delete').attr('href', url);
+  $('#deleteModal').modal();
+}
+</script>
 
 </body>
 

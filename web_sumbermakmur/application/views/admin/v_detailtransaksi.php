@@ -30,20 +30,22 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Data Transaksi</h1>
-          </div>
 
           <!-- Content -->
-          <h4>Detail Transaksi</h4>
-          &nbsp;
+          <div class="card" style="width: 95%;">
+            <div class="card-header" style="font-size: 25px;"><i class="fas fa-shopping-cart"></i> &nbsp;
+              Detail Transaksi
+            </div>
+            <div class="card-body">
+
           <?php foreach($detail_transaksi as $row):?>
         <div class="row-fluid">
-        <div class="pembeliaan">
+        <div class="pembeliaan" style="float: right;">
           <strong>No. Pembelian : <?php echo $row->id_transaksi; ?></strong><br>
           Tanggal : <?php echo $row->tanggal; ?><br>
         </div>
-        <div class="pembeli" style="margin-top: 20px;">
+
+        <div class="pembeli" style="float: left;">
           Nama : &nbsp; <?php echo $row->nama; ?> <br>
           E-mail : &nbsp; <?php echo $row->email; ?><br>
           No. Telp : &nbsp; <?php echo $row->no_telp; ?><br>
@@ -78,6 +80,11 @@
             <?php endforeach; ?>
           </tbody>
         </table>
+        <div class="tombol" style="float: right;">
+          <button style="width: 100px;" id="cancel" name="cancel" class="btn btn-danger" value="-1">Kembali</button>
+        </div>
+      </div>
+    </div>
 
           <!-- End of Content -->
 
