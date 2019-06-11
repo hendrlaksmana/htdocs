@@ -1,30 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Login Member</title>
-
-  <!-- Custom fonts for this template-->
-  <link href="<?php echo base_url('assets/fontawesome-free/css/all.min.css') ?>" rel="stylesheet" type="text/css">
-
-  <!-- Custom styles for this template-->
-  <link href="<?php echo base_url('css/sb-admin-2.min.css') ?>" rel="stylesheet">
+  <head>
+       <?php $this->load->view("member/_include/head.php") ?>  
+  </head>
+  <body>
   
+  <div class="site-wrap">
+    <header class="site-navbar" role="banner">
+        <?php $this->load->view("member/_include/navbar.php") ?>
+      
+    </header>
 
-</head>
-
-<body class="bg-light">
-
-  <div class="container">
-    <div class="card card-login mx-auto" style="width: 70%;margin-top: 120px">
+    <div class="site-section site-section-sm site-blocks-1" style="background-color: #f8f9fa">
+     <div class="container">
+     
+     <div class="card card-login mx-auto" style="width: 70%;margin-top: -20px">
       <div class="card-header" align="center" style="height: 140px;background-color: white;">
       <img src="<?php echo base_url('assets/sumber_makmur/logo.png')?>" style="height: 100px; width: 100px;"></div>
       <div class="card-body" style="margin-top: 5px;padding: 10px">
@@ -55,15 +45,20 @@
         </div>
       </div>
     </div>
+    
+     </div>
   </div>
 
-  <!-- Bootstrap core JavaScript-->
-  <script src="<?php echo base_url('assets/jquery/jquery.min.js')?>"></script>
-  <script src="<?php echo base_url('assets/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
+    <footer class="site-footer border-top">
+     <?php $this->load->view("member/_include/footer.php") ?>
+      
 
-  <!-- Core plugin JavaScript-->
-  <script src="<?php echo base_url('assets/jquery-easing/jquery.easing.min.js')?>"></script>
+      
+    </footer>
+  </div>
 
-</body>
+    
+  <?php $this->load->view("member/_include/js.php") ?>
 
+  </body>
 </html>
