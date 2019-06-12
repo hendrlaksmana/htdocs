@@ -28,6 +28,7 @@
 	 	function detail($id_transaksi)
 	 	{
 	 		$where = array('id_transaksi' => $id_transaksi);
+	 		$data['trans'] = $this->m_transaksi->detailtr($where,'transaksi');
 	 		$data['detail_transaksi'] = $this->m_transaksi->detailtrans($where,'detail_transaksi');
 	 		$this->load->view("admin/v_detailtransaksi",$data);
 	 	}

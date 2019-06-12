@@ -59,7 +59,7 @@
           </div>
         </div>
           
-          <div class="form-group row">
+          <div class="form-group row" hidden>
             <label class="col-sm-2 col-form-label">Password</label>
             <div class="col-sm-10">
             <input type="text" class="form-control" placeholder="Password" name="password" value="<?php echo $row->password ?>">
@@ -69,12 +69,17 @@
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Level</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" name="level" value="<?php echo $row->level ?>">
+            <select name="level">
+              <option value="<?php echo $row->level ?>"><?php echo $row->level ?></option>
+              <option value="">-- Ubah Kategori Lain --</option>
+              <option value="superadmin">Superadmin</option>
+              <option value="admin">Admin</option>
+            </select>
           </div>
         </div>
   
           <div class="tombol" style="float: right;">
-          <button style="width: 100px;" id="cancel" name="cancel" class="btn btn-danger" value="1">Batal</button>
+          <a style="width: 100px;" class="btn btn-danger" href="<?php echo base_url('index.php/admin/c_admin'); ?>" role="button">Kembali</a>
           <button style="width: 100px;margin-left: 10px;" type="submit" class="btn btn-primary" value="simpan" name="save">Save</button>
         </div>
         </form>

@@ -57,6 +57,8 @@
             <label class="col-sm-2 col-form-label">Ketegori</label>
             <div class="col-sm-10">
             <select name="kategori">
+              <option value="<?php echo $row->kategori ?>"><?php echo $row->kategori ?></option>
+              <option value="">-- Ubah Kategori Lain --</option>
               <option value="alat pertanian">Alat Pertanian</option>
               <option value="benih">Benih</option>
               <option value="bibit">Bibit</option>
@@ -80,7 +82,7 @@
           </div>
 
           <div class="tombol" style="float: right;">
-          <button style="width: 100px;" id="cancel" name="cancel" class="btn btn-danger" value="1">Batal</button>
+          <a style="width: 100px;" class="btn btn-danger" href="<?php echo base_url('index.php/admin/c_barang'); ?>" role="button">Kembali</a>
           <button style="width: 100px;margin-left: 10px;" type="submit" class="btn btn-primary" value="simpan" name="save">Save</button>
         </div>
         </form>

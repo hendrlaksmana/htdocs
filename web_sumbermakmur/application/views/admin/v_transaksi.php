@@ -99,6 +99,15 @@
 
   <?php $this->load->view("admin/_include/js.php") ?>
 
+  <?php $this->load->view("admin/_include/modal/modal_hapus.php") ?>
+
+  <script>
+  function deleteConfirm(url){
+    $('#btn-delete').attr('href', url);
+    $('#deleteModal').modal();
+  }
+  </script>
+
 </body>
 
 </html>

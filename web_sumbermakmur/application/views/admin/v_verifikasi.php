@@ -61,7 +61,7 @@
               <td><?php echo $row->alamat; ?></td>
               <td><?php echo $row->no_telp; ?></td>
               <td><img style="width: 100px;height: 100px;" src="<?php echo base_url() ?>assets/upload/transfer_bank/<?php echo $row->foto_transferbank ?>"></td>
-              <td><?php echo anchor('admin/c_verifikasi/delete/'.$row->id_verifikasi,'Hapus'); ?></td>
+              <td><a onclick="deleteConfirm('<?php echo site_url('admin/c_verifikasi/delete/'.$row->id_verifikasi) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a></td></td>
             </tr>
             <?php endforeach; ?>
           </tbody>
@@ -97,6 +97,15 @@
   <?php $this->load->view("admin/_include/logout_modal.php") ?>
 
   <?php $this->load->view("admin/_include/js.php") ?>
+
+  <?php $this->load->view("admin/_include/modal/modal_hapus.php") ?>
+
+  <script>
+  function deleteConfirm(url){
+    $('#btn-delete').attr('href', url);
+    $('#deleteModal').modal();
+  }
+  </script>
 
 </body>
 

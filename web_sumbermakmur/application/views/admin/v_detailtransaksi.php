@@ -38,7 +38,7 @@
             </div>
             <div class="card-body">
 
-              <?php foreach($detail_transaksi as $row){?>
+              <?php foreach($trans as $row){?>
                 <div class="row-fluid">
                 <div class="pembeliaan" style="float: right;">
                   <strong>No. Pembelian : <?php echo $row->id_transaksi; ?></strong><br>

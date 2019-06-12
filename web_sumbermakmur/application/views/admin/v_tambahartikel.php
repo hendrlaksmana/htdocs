@@ -63,7 +63,7 @@
           </div>
 
           <div class="tombol" style="float: right;">
-          <button style="width: 100px;" name="cancel" class="btn btn-danger" onclick="history.back(-1)">Kembali</button>
+          <a style="width: 100px;" class="btn btn-danger" href="<?php echo base_url('index.php/admin/c_artikel'); ?>" role="button">Kembali</a>
           <button style="width: 100px; margin-left: 10px;" type="submit" class="btn btn-primary" value="tambah" name="save">Simpan</button>
         </div>
         </form>

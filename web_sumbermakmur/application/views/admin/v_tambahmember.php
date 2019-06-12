@@ -83,7 +83,7 @@
         </div>
   
           <div class="tombol" style="float: right;">
-          <button style="width: 100px;" id="cancel" name="cancel" class="btn btn-danger" value="1">Batal</button>
+          <a style="width: 100px;" class="btn btn-danger" href="<?php echo base_url('index.php/admin/c_member'); ?>" role="button">Kembali</a>
           <button style="width: 100px;margin-left: 10px;" type="submit" class="btn btn-primary" value="simpan" name="save">Save</button>
         </div>
         </form>
