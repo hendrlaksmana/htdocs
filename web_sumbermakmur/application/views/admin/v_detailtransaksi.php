@@ -38,23 +38,22 @@
             </div>
             <div class="card-body">
 
-          <?php foreach($detail_transaksi as $row):?>
-        <div class="row-fluid">
-        <div class="pembeliaan" style="float: right;">
-          <strong>No. Pembelian : <?php echo $row->id_transaksi; ?></strong><br>
-          Tanggal : <?php echo $row->tanggal; ?><br>
-        </div>
+              <?php foreach($detail_transaksi as $row){?>
+                <div class="row-fluid">
+                <div class="pembeliaan" style="float: right;">
+                  <strong>No. Pembelian : <?php echo $row->id_transaksi; ?></strong><br>
+                  Tanggal : <?php echo $row->tanggal; ?><br>
+                </div>
 
-        <div class="pembeli" style="float: left;">
-          Nama : &nbsp; <?php echo $row->nama; ?> <br>
-          E-mail : &nbsp; <?php echo $row->email; ?><br>
-          No. Telp : &nbsp; <?php echo $row->no_telp; ?><br>
-          Alamat : &nbsp; <?php echo $row->nama_kota; ?><br>
-          Ongkos Kirim : &nbsp; Rp.<?php echo $row->tarif; ?><br>
-          &nbsp;
-      </div>
-      <?php endforeach; ?>
-
+                <div class="pembeli" style="float: left;">
+                  Nama : &nbsp; <?php echo $row->nama; ?> <br>
+                  E-mail : &nbsp; <?php echo $row->email; ?><br>
+                  No. Telp : &nbsp; <?php echo $row->no_telp; ?><br>
+                  Alamat : &nbsp; <?php echo $row->nama_kota; ?><br>
+                  Ongkos Kirim : &nbsp; Rp.<?php echo $row->tarif; ?><br>
+                  &nbsp;
+                </div>
+              <?php } ?>
 
         <table class="table table-striped">
           <thead>
@@ -81,7 +80,7 @@
           </tbody>
         </table>
         <div class="tombol" style="float: right;">
-          <button style="width: 100px;" id="cancel" name="cancel" class="btn btn-danger" value="-1">Kembali</button>
+          <button style="width: 100px;" name="cancel" class="btn btn-danger" onclick="history.back(-1)">Kembali</button>
         </div>
       </div>
     </div>

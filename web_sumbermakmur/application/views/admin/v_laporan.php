@@ -55,8 +55,8 @@
               <td><?php echo $row->nama; ?></td>
               <td><?php echo $row->tanggal; ?></td>
               <td><?php echo $row->total_pembelian; ?></td>
-              <td><?php echo anchor('admin/c_detailtransaksi/'.$row->id_transaksi,'Detail'); ?>
-                  <?php echo anchor('admin/c_transaksi/delete/'.$row->id_transaksi,'Hapus'); ?></td>
+              <td><?php echo anchor('admin/c_laporan/detail/'.$row->id_transaksi,'Detail'); ?>
+                  <?php echo anchor('admin/c_laporan/delete/'.$row->id_transaksi,'Hapus'); ?></td>
             </tr>
             <?php endforeach; ?>
           </tbody>

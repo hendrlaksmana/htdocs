@@ -55,8 +55,8 @@
               <td><?php echo $row->judul_artikel; ?></td>
               <td><?php echo $row->penulis; ?></td>
               <td><?php echo $row->tanggal; ?></td>
-              <td><?php echo anchor('admin/c_artikel/edit/'.$row->id_artikel,'Edit'); ?>
-                  <?php echo anchor('admin/c_artikel/delete/'.$row->id_artikel,'Hapus'); ?>
+              <td style="width: 20%"><a href="<?php echo site_url('admin//c_artikel/edit/'.$row->id_artikel) ?>"
+                       class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
                   <a onclick="deleteConfirm('<?php echo site_url('admin/c_artikel/delete/'.$row->id_artikel) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a></td>
             </tr>
             <?php endforeach; ?>
@@ -65,6 +65,10 @@
         </div>
             </div>
           </div>
+
+          <!-- yang lama -->
+          <!--<?php echo anchor('admin/c_artikel/edit/'.$row->id_artikel,'Edit'); ?>
+                  <?php echo anchor('admin/c_artikel/delete/'.$row->id_artikel,'Hapus'); ?>-->
 
           <!-- End of Content -->
 

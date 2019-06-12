@@ -18,5 +18,19 @@
 	 		$this->load->view("admin/v_laporan",$data);
 	 	}
 
+	 	function detail($id_transaksi)
+	 	{
+	 		$where = array('id_transaksi' => $id_transaksi);
+	 		$data['detail_transaksi'] = $this->m_laporan->detailtrans($where,'detail_transaksi');
+	 		$this->load->view("admin/v_detailtransaksi",$data);
+	 	}
+
+	 	function delete($id_transaksi){
+	 		$where = array('id_transaksi' => $id_transaksi);
+			$this->m_laporan->hapus_data($where,'laporan_transaksi');
+			$this->m_laporan->hapus_detail($where,'detail_transaksi');
+			redirect('admin/c_laporan');
+	 	}
+
 	 } 
  ?>
