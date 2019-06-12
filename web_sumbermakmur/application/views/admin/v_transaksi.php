@@ -34,7 +34,7 @@
           <!-- Content -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h4 class="m-0 font-weight-bold text-primary">Data Transaksi</h4>
+              <h4 class="m-0 font-weight-bold text-primary"><i class="fas fa-fw fa-balance-scale" style="margin-right: 10px;"></i>Data Transaksi</h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -55,10 +55,14 @@
               <td><?php echo $row->nama; ?></td>
               <td><?php echo $row->tanggal; ?></td>
               <td><?php echo $row->total_pembelian; ?></td>
-              <td>
-                <?php echo anchor('admin/c_transaksi/detail/'.$row->id_transaksi,'Detail'); ?>&nbsp;|
-                <?php echo anchor('admin/c_transaksi/sukses/'.$row->id_transaksi,'Finalisasi'); ?>&nbsp;|
-                <?php echo anchor('admin/c_transaksi/delete/'.$row->id_transaksi,'Batal'); ?></td>
+              <td><a href="<?php echo site_url('admin/c_transaksi/detail/'.$row->id_transaksi) ?>"
+                       class="btn btn-small"><i class="fas fa-info-circle"></i>Detail</a>
+                  
+                  <a href="<?php echo site_url('admin/c_transaksi/sukses/'.$row->id_transaksi) ?>"
+                       class="btn btn-small text-primary"><i class="fas fa-check-circle"></i>Finalisasi</a>
+                  
+                  <a onclick="deleteConfirm('<?php echo site_url('admin/c_transaksi/delete/'.$row->id_transaksi) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a></td>
+
             </tr>
             <?php endforeach; ?>
           </tbody>

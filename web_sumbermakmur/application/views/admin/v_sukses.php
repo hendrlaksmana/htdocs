@@ -34,8 +34,8 @@
           <!-- Content -->
 
           <div class="card" style="width: 95%;">
-            <div class="card-header" style="font-size: 25px;">
-              Finalisasi
+            <div class="card-header">
+              <h4 class="m-0 font-weight-bold text-primary"><i class="fas fa-check-circle" style="margin-right: 10px;"></i>Finalisasi</h4>
             </div>
             <div class="card-body">
 

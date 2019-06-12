@@ -33,8 +33,8 @@
 
           <!-- Content -->
           <div class="card" style="width: 95%;">
-            <div class="card-header" style="font-size: 25px;"><i class="fas fa-shopping-cart"></i> &nbsp;
-              Detail Transaksi
+            <div class="card-header">
+              <h4 class="m-0 font-weight-bold text-primary"><i class="fas fa-shopping-cart" style="margin-right: 10px;"></i>Detail Transaksi</h4>
             </div>
             <div class="card-body">
 

@@ -34,8 +34,8 @@
           <!-- Content -->
 
           <div class="card" style="width: 95%;">
-            <div class="card-header" style="font-size: 25px;">
-              Edit Barang
+            <div class="card-header">
+              <h4 class="m-0 font-weight-bold text-primary"> <i class="fas fa-gifts" style="margin-right: 10px;"></i> Edit Barang</h4>
             </div>
             <div class="card-body">
 

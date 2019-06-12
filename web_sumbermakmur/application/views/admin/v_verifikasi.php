@@ -34,7 +34,7 @@
           <!-- Content -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h4 class="m-0 font-weight-bold text-primary">Data Verifikasi</h4>
+              <h4 class="m-0 font-weight-bold text-primary"><i class="far fa-handshake" style="margin-right: 10px;"></i>Data Verifikasi</h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">

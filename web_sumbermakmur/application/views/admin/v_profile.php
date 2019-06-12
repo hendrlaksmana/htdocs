@@ -35,7 +35,7 @@
 
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h4 class="m-0 font-weight-bold text-primary">Profile</h4>
+              <h4 class="m-0 font-weight-bold text-primary"><i class="fas fa-user-tie" style="margin-right: 10px;"></i>Profile</h4>
             </div>
             <div class="card-body">
               <img style="float: left; height: 150px; width: 150px; margin-right: 50px;" class="img-profile rounded-circle" src="<?php echo base_url('assets/sumber_makmur/default_user.png'); ?>">

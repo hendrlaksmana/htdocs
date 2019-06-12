@@ -35,7 +35,7 @@
 
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h4 class="m-0 font-weight-bold text-primary">Data Barang <a class="btn btn-primary" style="float: right;" href="<?php echo base_url('index.php/admin/c_barang/tambah') ?>" >Tambah Data</a></h4>
+              <h4 class="m-0 font-weight-bold text-primary"><i class="fas fa-gifts" style="margin-right: 10px;"></i> Data Barang <a class="btn btn-primary" style="float: right;" href="<?php echo base_url('index.php/admin/c_barang/tambah') ?>"><i style="margin-right: 10px;" class="fas fa-plus-circle"></i>Tambah Data</a></h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -56,8 +56,9 @@
               <td><?php echo $row->nama_produk; ?></td>
               <td><?php echo $row->tanggal; ?></td>
               <td><?php echo $row->harga; ?></td>
-              <td><?php echo anchor('admin/c_barang/edit/'.$row->id_produk,'Edit'); ?>
-                  <?php echo anchor('admin/c_barang/delete/'.$row->id_produk,'Hapus'); ?></td>
+              <td style="width: 20%;"><a href="<?php echo site_url('admin//c_barang/edit/'.$row->id_produk) ?>"
+                       class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
+                  <a onclick="deleteConfirm('<?php echo site_url('admin/c_barang/delete/'.$row->id_produk) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a></td>
             </tr>
             <?php endforeach; ?>
           </tbody>
@@ -93,6 +94,15 @@
   <?php $this->load->view("admin/_include/logout_modal.php") ?>
 
   <?php $this->load->view("admin/_include/js.php") ?>
+
+  <?php $this->load->view("admin/_include/modal/modal_hapus.php") ?>
+
+  <script>
+  function deleteConfirm(url){
+    $('#btn-delete').attr('href', url);
+    $('#deleteModal').modal();
+  }
+  </script>
 
 </body>
 

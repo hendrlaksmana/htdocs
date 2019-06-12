@@ -34,7 +34,7 @@
           <!-- Content -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h4 class="m-0 font-weight-bold text-primary">Laporan</h4>
+              <h4 class="m-0 font-weight-bold text-primary"><i class="fas fa-fw fa-chart-area" style="margin-right: 10px;"></i>Laporan<a class="btn btn-primary" style="float: right;" href="<?php echo base_url('index.php/admin/c_laporan/print') ?>"><i style="margin-right: 10px;" class="fas fa-print"></i>Print</a></h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -55,8 +55,9 @@
               <td><?php echo $row->nama; ?></td>
               <td><?php echo $row->tanggal; ?></td>
               <td><?php echo $row->total_pembelian; ?></td>
-              <td><?php echo anchor('admin/c_laporan/detail/'.$row->id_transaksi,'Detail'); ?>
-                  <?php echo anchor('admin/c_laporan/delete/'.$row->id_transaksi,'Hapus'); ?></td>
+              <td style="width: 20%;"><a href="<?php echo site_url('admin/c_laporan/detail/'.$row->id_transaksi) ?>"
+                       class="btn btn-small"><i class="fas fa-info-circle"></i>Detail</a>
+                  <a onclick="deleteConfirm('<?php echo site_url('admin/c_laporan/delete/'.$row->id_transaksi) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a></td>
             </tr>
             <?php endforeach; ?>
           </tbody>
@@ -92,6 +93,15 @@
   <?php $this->load->view("admin/_include/logout_modal.php") ?>
 
   <?php $this->load->view("admin/_include/js.php") ?>
+
+  <?php $this->load->view("admin/_include/modal/modal_hapus.php") ?>
+
+  <script>
+  function deleteConfirm(url){
+    $('#btn-delete').attr('href', url);
+    $('#deleteModal').modal();
+  }
+  </script>
 
 </body>
 

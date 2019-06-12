@@ -6,7 +6,7 @@
 	 	{
 	 		parent :: __construct();
 	 		if($this->session->userdata('status') != "login"){
-			redirect(base_url("login_adm"));
+			redirect(base_url("index.php/login_adm"));
 		}
 	 		$this->load->model("m_barang");
 	 			$this->load->helper('url');

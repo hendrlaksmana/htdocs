@@ -6,7 +6,7 @@
 	 	{
 	 		parent :: __construct();
 	 		if($this->session->userdata('status') != "login"){
-			redirect(base_url("login_adm"));
+			redirect(base_url("index.php/login_adm"));
 		}
 	 		$this->load->model("m_laporan");
 	 			$this->load->helper('url');
@@ -30,6 +30,12 @@
 			$this->m_laporan->hapus_data($where,'laporan_transaksi');
 			$this->m_laporan->hapus_detail($where,'detail_transaksi');
 			redirect('admin/c_laporan');
+	 	}
+
+	 	function print()
+	 	{
+	 		$data['laporan_transaksi']=$this->m_laporan->tampil_data();
+	 		$this->load->view("admin/v_laporan_print",$data);
 	 	}
 
 	 } 
