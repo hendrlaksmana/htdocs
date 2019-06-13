@@ -89,6 +89,7 @@
             <a class="collapse-item" href="<?php echo base_url('index.php/admin/c_transaksi') ?>">Transaksi</a>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <a class="collapse-item" href="<?php echo base_url('index.php/admin/c_verifikasi') ?>">Verifikasi</a>
 <<<<<<< HEAD
 
@@ -97,6 +98,9 @@
 >>>>>>> parent of 356912a... update aboutus
 =======
 >>>>>>> parent of 54bb9f9... Merge branch 'master' of https://github.com/hendrlaksmana/htdocs
+=======
+            <a class="collapse-item" href="#">Verifikasi</a>
+>>>>>>> parent of 356912a... update aboutus
 =======
             <a class="collapse-item" href="#">Verifikasi</a>
 >>>>>>> parent of 356912a... update aboutus
@@ -128,6 +132,7 @@
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     </ul>
@@ -246,6 +251,9 @@
 =======
   <?php endif;?>
 >>>>>>> parent of 54bb9f9... Merge branch 'master' of https://github.com/hendrlaksmana/htdocs
+=======
+    </ul>
+>>>>>>> parent of 356912a... update aboutus
 =======
     </ul>
 >>>>>>> parent of 356912a... update aboutus

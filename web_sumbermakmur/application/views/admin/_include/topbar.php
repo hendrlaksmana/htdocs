@@ -153,6 +153,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><i class="fas fa-user-tie" style="margin-right: 15px;"></i><?php echo $this->session->userdata('nama') ?></span>
 
@@ -160,6 +161,10 @@
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><i class="fas fa-user" style="margin-right: 15px;"></i><?php echo $this->session->userdata('nama') ?></span>
 >>>>>>> parent of 54bb9f9... Merge branch 'master' of https://github.com/hendrlaksmana/htdocs
                 <!--<img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">-->
+=======
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+>>>>>>> parent of 356912a... update aboutus
 =======
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
