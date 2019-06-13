@@ -12,6 +12,7 @@
 
 			function hapus_data($where,$table){
 <<<<<<< HEAD
+<<<<<<< HEAD
 				$this->db->select('*');
 				$this->db->from('transaksi');
 				$this->db->join('detail_transaksi','detail_transaksi.id_transaksi=transaksi.id_transaksi');
@@ -44,6 +45,8 @@
 >>>>>>> parent of 356912a... update aboutus
 =======
 >>>>>>> parent of 54bb9f9... Merge branch 'master' of https://github.com/hendrlaksmana/htdocs
+=======
+>>>>>>> parent of 356912a... update aboutus
 				$this->db->where($where);
 				$this->db->delete($table);
 			}

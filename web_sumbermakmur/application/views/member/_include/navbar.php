@@ -20,6 +20,7 @@
                 <ul>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
@@ -45,6 +46,10 @@
               </div>
             </li>
 
+=======
+                  <li><a href="#"><span class="icon icon-person"></span></a></li>
+                  <li><a href="#"><span class="icon icon-heart-o"></span></a></li>
+>>>>>>> parent of 356912a... update aboutus
 =======
                   <li><a href="#"><span class="icon icon-person"></span></a></li>
                   <li><a href="#"><span class="icon icon-heart-o"></span></a></li>

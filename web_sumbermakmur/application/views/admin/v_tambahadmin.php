@@ -48,11 +48,15 @@
 =======
           <div class="form-group">
             <label for="nama" class="col-sm-3 col-form-label">Nama</label>
+<<<<<<< HEAD
 >>>>>>> parent of 54bb9f9... Merge branch 'master' of https://github.com/hendrlaksmana/htdocs
             <input type="text" class="form-control" id="exampleInput" name="nama">
 =======
           <div class="form-group">
             <label for="nama" class="col-sm-3 col-form-label">Nama</label>
+            <input type="text" class="form-control" id="exampleInput" placeholder="Nama" name="nama">
+>>>>>>> parent of 356912a... update aboutus
+=======
             <input type="text" class="form-control" id="exampleInput" placeholder="Nama" name="nama">
 >>>>>>> parent of 356912a... update aboutus
           </div>
@@ -72,11 +76,15 @@
 =======
           <div class="form-group">
             <label for="deskripsi" class="col-sm-3 col-form-label">Password</label>
+<<<<<<< HEAD
 >>>>>>> parent of 54bb9f9... Merge branch 'master' of https://github.com/hendrlaksmana/htdocs
             <input type="password" class="form-control" id="exampleInput" name="password">
 =======
           <div class="form-group">
             <label for="deskripsi" class="col-sm-3 col-form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInput" placeholder="Password" name="password">
+>>>>>>> parent of 356912a... update aboutus
+=======
             <input type="password" class="form-control" id="exampleInput" placeholder="Password" name="password">
 >>>>>>> parent of 356912a... update aboutus
           </div>
