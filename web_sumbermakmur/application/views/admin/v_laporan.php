@@ -34,30 +34,30 @@
           <!-- Content -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h4 class="m-0 font-weight-bold text-primary"><i class="fas fa-user-tie" style="margin-right: 10px;"></i>Data Admin <a class="btn btn-primary" style="float: right;" href="<?php echo base_url('index.php/admin/c_admin/tambah') ?>"><i style="margin-right: 10px;" class="fas fa-plus-circle"></i>Tambah Data</a></h4>
+              <h4 class="m-0 font-weight-bold text-primary"><i class="fas fa-fw fa-chart-area" style="margin-right: 10px;"></i>Laporan<a class="btn btn-primary" style="float: right;" href="<?php echo base_url('index.php/admin/c_laporan/print') ?>"><i style="margin-right: 10px;" class="fas fa-print"></i>Print</a></h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
             <tr>
-              <th scope="col">ID</th>
-              <th scope="col" style="width: 200px;">Nama Admin</th>
-              <th scope="col">Username</th>
-              <th scope="col">Level</th>
+              <th scope="col">Id Transaksi</th>
+              <th scope="col" style="width: 200px;">Nama</th>
+              <th scope="col">Tanggal</th>
+              <th scope="col">Total Pembelian</th>
               <th scope="col">Aksi</th>
             </tr>
           </thead>
           <tbody>
-            <?php foreach($dataadmin as $row):?>
+            <?php foreach($laporan_transaksi as $row):?>
             <tr>
-              <th scope="row"> <?php echo $row->id_admin; ?></th>
+              <th scope="row"> <?php echo $row->id_transaksi; ?></th>
               <td><?php echo $row->nama; ?></td>
-              <td><?php echo $row->username; ?></td>
-              <td><?php echo $row->level; ?></td>
-              <td style="width: 20%;"><a href="<?php echo site_url('admin/c_admin/edit/'.$row->id_admin) ?>"
-                       class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-                  <a onclick="deleteConfirm('<?php echo site_url('admin/c_admin/delete/'.$row->id_admin) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a></td>
+              <td><?php echo $row->tanggal; ?></td>
+              <td><?php echo $row->total_pembelian; ?></td>
+              <td style="width: 20%;"><a href="<?php echo site_url('admin/c_laporan/detail/'.$row->id_transaksi) ?>"
+                       class="btn btn-small"><i class="fas fa-info-circle"></i>Detail</a>
+                  <a onclick="deleteConfirm('<?php echo site_url('admin/c_laporan/delete/'.$row->id_transaksi) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a></td>
             </tr>
             <?php endforeach; ?>
           </tbody>

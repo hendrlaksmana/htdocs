@@ -32,24 +32,29 @@
           <!-- Page Heading -->
 
           <!-- Content -->
-          <div class="card">
-            <div class="card-header" style="font-size: 25px;"><i class="far fa-newspaper"></i> &nbsp;
-              Tambah Artikel
+          <div class="card" style="width: 95%;">
+            <div class="card-header">
+              <h4 class="m-0 font-weight-bold text-primary"><i class="fas fa-fw fa-book" style="margin-right: 10px;"></i> Tambah Artikel</h4>
             </div>
             <div class="card-body">
           <form action="<?php echo base_url('index.php/admin/c_artikel/tambah_aksi'); ?>" method="POST" enctype="multipart/form-data">
           
-          <div class="form-group">
-            <label>Judul Artikel :</label>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Judul Artikel</label>
+            <div class="col-sm-10">
             <input type="text" class="form-control" id="exampleInput" placeholder="Judul Artikel" name="judul_artikel">
           </div>
+        </div>
           
-          <div class="form-group">
-            <label>Foto :</label>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Foto</label>
+            <div class="col-sm-10">
             <input type="file" class="form-control" id="exampleInput" aria-describedby="emailHelp" name="foto">
           </div>
+        </div>
           
           <div class="form-group">
+            <label>Deskripsi</label>
             <textarea class="ckeditor" name="deskripsi"></textarea>
           </div>
 
@@ -58,7 +63,7 @@
           </div>
 
           <div class="tombol" style="float: right;">
-          <button style="width: 100px;" id="cancel" name="cancel" class="btn btn-danger" value="1">Batal</button>
+          <a style="width: 100px;" class="btn btn-danger" href="<?php echo base_url('index.php/admin/c_artikel'); ?>" role="button">Kembali</a>
           <button style="width: 100px; margin-left: 10px;" type="submit" class="btn btn-primary" value="tambah" name="save">Simpan</button>
         </div>
         </form>

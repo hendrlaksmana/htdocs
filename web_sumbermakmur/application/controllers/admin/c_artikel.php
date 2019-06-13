@@ -6,7 +6,7 @@
 	 	{
 	 		parent :: __construct();
 	 		if($this->session->userdata('status') != "login"){
-			redirect(base_url("login_adm"));
+			redirect(base_url("index.php/login_adm"));
 		}
 	 		$this->load->model("m_artikel");
 	 			$this->load->helper('url');
@@ -78,7 +78,7 @@
 
 	 	private function _uploadImage()
 		{
-		    $config['upload_path']          = './assets/upload/foto_produk/';
+		    $config['upload_path']          = './assets/upload/artikel/';
 		    $config['allowed_types']        = 'gif|jpg|png|jpeg';
 		    $config['file_name']            = $_FILES['foto']['name'];
 		    $config['overwrite']			= true;

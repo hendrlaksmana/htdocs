@@ -7,7 +7,7 @@ class dashboard extends CI_Controller {
 	 	{
 	 		parent :: __construct();
 	 		if($this->session->userdata('status') != "login"){
-			redirect("login_adm");
+			redirect("index.php/login_adm");
 		}
 	 	}
 

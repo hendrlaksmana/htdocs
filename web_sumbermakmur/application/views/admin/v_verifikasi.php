@@ -34,7 +34,9 @@
           <!-- Content -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h4 class="m-0 font-weight-bold text-primary">Data Verifikasi</h4>
+
+              <h4 class="m-0 font-weight-bold text-primary"><i class="far fa-handshake" style="margin-right: 10px;"></i>Data Verifikasi</h4>
+
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -60,8 +62,10 @@
               <td><?php echo $row->email; ?></td>
               <td><?php echo $row->alamat; ?></td>
               <td><?php echo $row->no_telp; ?></td>
-              <td><?php echo $row->foto_transferbank; ?></td>
-              <td><?php echo anchor('admin/c_verifikasi/delete/'.$row->id_verifikasi,'Hapus'); ?></td>
+
+              <td><img style="width: 100px;height: 100px;" src="<?php echo base_url() ?>assets/upload/transfer_bank/<?php echo $row->foto_transferbank ?>"></td>
+              <td><a onclick="deleteConfirm('<?php echo site_url('admin/c_verifikasi/delete/'.$row->id_verifikasi) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a></td></td>
+
             </tr>
             <?php endforeach; ?>
           </tbody>
@@ -97,6 +101,16 @@
   <?php $this->load->view("admin/_include/logout_modal.php") ?>
 
   <?php $this->load->view("admin/_include/js.php") ?>
+
+
+  <?php $this->load->view("admin/_include/modal/modal_hapus.php") ?>
+
+  <script>
+  function deleteConfirm(url){
+    $('#btn-delete').attr('href', url);
+    $('#deleteModal').modal();
+  }
+  </script>
 
 </body>
 

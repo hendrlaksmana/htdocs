@@ -35,54 +35,47 @@
 
           <div class="card" style="width: 95%;">
             <div class="card-header">
-              <h4 class="m-0 font-weight-bold text-primary"> <i class="fas fa-gifts" style="margin-right: 10px;"></i> Edit Barang</h4>
+              <h4 class="m-0 font-weight-bold text-primary"><i class="fas fa-check-circle" style="margin-right: 10px;"></i>Finalisasi</h4>
             </div>
             <div class="card-body">
 
-          <?php foreach($produk as $row){ ?>
-          <form action="<?php echo base_url(). 'index.php/admin/c_barang/update'; ?>" method="POST" enctype="multipart/form-data">
-
-          <div class="form-group row" hidden>
-            <input type="text" class="form-control" placeholder="Id Produk" name="id_produk" value="<?php echo $row->id_produk ?>">
-          </div>
-          
-          <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Nama Produk</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Nama Produk" name="nama_produk" value="<?php echo $row->nama_produk ?>">
-          </div>
-          </div>
+          <?php foreach($transaksi as $row){ ?>
+          <form action="<?php echo base_url(). 'index.php/admin/c_transaksi/finalisasi'; ?>" method="POST" enctype="multipart/form-data">
 
           <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Ketegori</label>
+            <label class="col-sm-2 col-form-label">ID Transaksi</label>
             <div class="col-sm-10">
-            <select name="kategori">
-              <option value="<?php echo $row->kategori ?>"><?php echo $row->kategori ?></option>
-              <option value="">-- Ubah Kategori Lain --</option>
-              <option value="alat pertanian">Alat Pertanian</option>
-              <option value="benih">Benih</option>
-              <option value="bibit">Bibit</option>
-              <option value="pupuk">Pupuk</option>
-            </select>
+            <input type="text" class="form-control" id="exampleInput" placeholder="Id Transaksi" name="id_transaksi" value="<?php echo $row->id_transaksi ?>" readonly>
           </div>
           </div>
           
           <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Deskripsi</label>
+            <label class="col-sm-2 col-form-label">ID Member</label>
             <div class="col-sm-10">
-            <textarea style="width: 500px; height: 100px;" name="deskripsi" placeholder="deskripsi"><?php echo $row->deskripsi ?></textarea>
+            <input type="text" class="form-control" id="exampleInput" placeholder="Id Member" name="id_member" value="<?php echo $row->id_member ?>" readonly>
           </div>
           </div>
 
           <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Harga</label>
+            <label class="col-sm-2 col-form-label">ID Ongkir</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Harga" name="harga" value="<?php echo $row->harga ?>">
+            <input type="text" class="form-control" id="exampleInput" placeholder="Id Ongkir" name="id_ongkir" value="<?php echo $row->id_ongkir ?>" readonly>
           </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Total</label>
+            <div class="col-sm-10">
+            <input type="text" class="form-control" id="exampleInput" placeholder="Total" name="total_pembelian" value="<?php echo $row->total_pembelian ?>" readonly>
+          </div>
+          </div>
+
+          <div>
+            <label style="color: red;">* Proses Transaksi selesai!!! pastikan anda melakukan pengecekan secara manual di menu verifikasi dan menu transaksi pastikan data transaksi telah sesuai</label>
           </div>
 
           <div class="tombol" style="float: right;">
-          <a style="width: 100px;" class="btn btn-danger" href="<?php echo base_url('index.php/admin/c_barang'); ?>" role="button">Kembali</a>
+          <button style="width: 100px;" id="cancel" name="cancel" class="btn btn-danger" value="1">Batal</button>
           <button style="width: 100px;margin-left: 10px;" type="submit" class="btn btn-primary" value="simpan" name="save">Save</button>
         </div>
         </form>

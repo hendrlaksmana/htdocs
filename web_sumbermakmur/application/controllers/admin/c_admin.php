@@ -6,7 +6,7 @@
 	 	{
 	 		parent :: __construct();
 	 		if($this->session->userdata('status') != "login"){
-			redirect(base_url("login_adm"));
+			redirect(base_url("index.php/login_adm"));
 		}
 	 		$this->load->model("m_admin");
 	 			$this->load->helper('url');
@@ -62,7 +62,7 @@
 			$data = array(
 				'nama' => $nama,
 				'username' => $username,
-				'password' => $password,
+				'password' => md5($password),
 				'level' => $level
 			);
 		 
