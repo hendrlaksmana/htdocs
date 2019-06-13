@@ -43,7 +43,7 @@
             <tr>
               <th scope="col">ID</th>
               <th scope="col" style="width: 200px;">Judul</th>
-              <th scope="col">Foto</th>
+              <th scope="col">Penulis</th>
               <th scope="col">Tanggal</th>
               <th scope="col">Aksi</th>
             </tr>
@@ -53,7 +53,7 @@
             <tr>
               <th scope="row"> <?php echo $row->id_artikel; ?></th>
               <td><?php echo $row->judul_artikel; ?></td>
-              <td><?php echo $row->foto; ?></td>
+              <td><?php echo $row->penulis; ?></td>
               <td><?php echo $row->tanggal; ?></td>
               <td><?php echo anchor('admin/c_artikel/edit/'.$row->id_artikel,'Edit'); ?>
                   <?php echo anchor('admin/c_artikel/delete/'.$row->id_artikel,'Hapus'); ?></td>
