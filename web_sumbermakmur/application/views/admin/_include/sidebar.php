@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url('index.php/admin/') ?>">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="admin">
         <div class="sidebar-brand-icon">
           <img class="mr-3" src="<?php echo base_url('assets/sumber_makmur/putih.png')?>" style="padding: 10px;" alt="Generic placeholder image" height="70" width="70">
         </div>
@@ -43,7 +43,7 @@
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-gifts"></i>
+          <i class="fas fa-fw fa-tags"></i>
           <span>Barang</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -89,10 +89,13 @@
             <a class="collapse-item" href="<?php echo base_url('index.php/admin/c_transaksi') ?>">Transaksi</a>
 <<<<<<< HEAD
             <a class="collapse-item" href="<?php echo base_url('index.php/admin/c_verifikasi') ?>">Verifikasi</a>
+<<<<<<< HEAD
 
 =======
             <a class="collapse-item" href="#">Verifikasi</a>
 >>>>>>> parent of 356912a... update aboutus
+=======
+>>>>>>> parent of 54bb9f9... Merge branch 'master' of https://github.com/hendrlaksmana/htdocs
           </div>
         </div>
       </li>
@@ -101,15 +104,14 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseReport" aria-expanded="true" aria-controls="collapseReport">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Laporan</span>
+          <span>Laporan Keuangan</span>
         </a>
         <div id="collapseReport" class="collapse" aria-labelledby="headingReport" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu :</h6>
-            <a class="collapse-item" href="<?php echo base_url('index.php/admin/c_laporan') ?>">Laporan Transaksi</a>
-            <!--<a class="collapse-item" href="#">Laporan Harian</a>
+            <a class="collapse-item" href="#">Laporan Harian</a>
             <a class="collapse-item" href="#">Laporan Bulanan</a>
-            <a class="collapse-item" href="#">Laporan Tahunan</a>-->
+            <a class="collapse-item" href="#">Laporan Tahunan</a>
           </div>
         </div>
       </li>
@@ -201,7 +203,6 @@
             <h6 class="collapse-header">Menu :</h6>
             <a class="collapse-item" href="<?php echo base_url('index.php/admin/c_transaksi') ?>">Transaksi</a>
             <a class="collapse-item" href="<?php echo base_url('index.php/admin/c_verifikasi') ?>">Verifikasi</a>
-
           </div>
         </div>
       </li>
@@ -231,8 +232,12 @@
       </div>
 
     </ul>
+<<<<<<< HEAD
 
   <?php endif;?>
 =======
     </ul>
 >>>>>>> parent of 356912a... update aboutus
+=======
+  <?php endif;?>
+>>>>>>> parent of 54bb9f9... Merge branch 'master' of https://github.com/hendrlaksmana/htdocs

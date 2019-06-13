@@ -6,7 +6,7 @@
 	 	{
 	 		parent :: __construct();
 	 		if($this->session->userdata('status') != "login"){
-			redirect(base_url("index.php/login_adm"));
+			redirect(base_url("login_adm"));
 		}
 	 		$this->load->model("m_barang");
 	 			$this->load->helper('url');
@@ -26,9 +26,9 @@
 	 	function tambah_aksi(){
 		$nama_produk = $this->input->post('nama_produk');
 		$kategori = $this->input->post('kategori');
-		$nama_file = $this->_uploadImage();
+		$nama_file = $this->input->post('nama_file');
 		$deskripsi = $this->input->post('deskripsi');
-		$tanggal = date("Y-m-d H:i:s");
+		$tanggal = $this->input->post('tanggal');
 		$harga = $this->input->post('harga');
  
 		$data = array(
@@ -54,13 +54,15 @@
 			$id_produk = $this->input->post('id_produk');
 			$nama_produk = $this->input->post('nama_produk');
 			$kategori = $this->input->post('kategori');
+			$nama_file = $this->input->post('nama_file');
 			$deskripsi = $this->input->post('deskripsi');
-			$tanggal = date("Y-m-d H:i:s");
+			$tanggal = $this->input->post('tanggal');
 			$harga = $this->input->post('harga');
 		 
 			$data = array(
 				'nama_produk' => $nama_produk,
 				'kategori' => $kategori,
+				'nama_file' => $nama_file,
 				'deskripsi' => $deskripsi,
 				'tanggal' => $tanggal,
 				'harga' => $harga
@@ -80,25 +82,6 @@
 			$this->m_barang->hapus_data($where,'produk');
 			redirect('admin/c_barang');
 	 	}
-
-	 	private function _uploadImage()
-		{
-		    $config['upload_path']          = './assets/upload/foto_produk/';
-		    $config['allowed_types']        = 'gif|jpg|png|jpeg';
-		    $config['file_name']            = $_FILES['nama_file']['name'];
-		    $config['overwrite']			= true;
-		    $config['max_size']             = 1024; // 1MB
-		    // $config['max_width']            = 1024;
-		    // $config['max_height']           = 768;
-
-		    $this->load->library('upload', $config);
-
-		    if ($this->upload->do_upload('nama_file')) {
-		        return $this->upload->data("file_name");
-		    }
-		    
-		    return "default.jpg";
-		}
 
 	 } 
  ?>

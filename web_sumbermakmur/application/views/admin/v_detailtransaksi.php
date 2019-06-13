@@ -30,30 +30,29 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Data Transaksi</h1>
+          </div>
 
           <!-- Content -->
-          <div class="card" style="width: 95%;">
-            <div class="card-header">
-              <h4 class="m-0 font-weight-bold text-primary"><i class="fas fa-shopping-cart" style="margin-right: 10px;"></i>Detail Transaksi</h4>
-            </div>
-            <div class="card-body">
+          <h4>Detail Transaksi</h4>
+          &nbsp;
+          <?php foreach($detail_transaksi as $row):?>
+        <div class="row-fluid">
+        <div class="pembeliaan">
+          <strong>No. Pembelian : <?php echo $row->id_transaksi; ?></strong><br>
+          Tanggal : <?php echo $row->tanggal; ?><br>
+        </div>
+        <div class="pembeli" style="margin-top: 20px;">
+          Nama : &nbsp; <?php echo $row->nama; ?> <br>
+          E-mail : &nbsp; <?php echo $row->email; ?><br>
+          No. Telp : &nbsp; <?php echo $row->no_telp; ?><br>
+          Alamat : &nbsp; <?php echo $row->nama_kota; ?><br>
+          Ongkos Kirim : &nbsp; Rp.<?php echo $row->tarif; ?><br>
+          &nbsp;
+      </div>
+      <?php endforeach; ?>
 
-              <?php foreach($trans as $row){?>
-                <div class="row-fluid">
-                <div class="pembeliaan" style="float: right;">
-                  <strong>No. Pembelian : <?php echo $row->id_transaksi; ?></strong><br>
-                  Tanggal : <?php echo $row->tanggal; ?><br>
-                </div>
-
-                <div class="pembeli" style="float: left;">
-                  Nama : &nbsp; <?php echo $row->nama; ?> <br>
-                  E-mail : &nbsp; <?php echo $row->email; ?><br>
-                  No. Telp : &nbsp; <?php echo $row->no_telp; ?><br>
-                  Alamat : &nbsp; <?php echo $row->nama_kota; ?><br>
-                  Ongkos Kirim : &nbsp; Rp.<?php echo $row->tarif; ?><br>
-                  &nbsp;
-                </div>
-              <?php } ?>
 
         <table class="table table-striped">
           <thead>
@@ -79,11 +78,6 @@
             <?php endforeach; ?>
           </tbody>
         </table>
-        <div class="tombol" style="float: right;">
-          <button style="width: 100px;" name="cancel" class="btn btn-danger" onclick="history.back(-1)">Kembali</button>
-        </div>
-      </div>
-    </div>
 
           <!-- End of Content -->
 

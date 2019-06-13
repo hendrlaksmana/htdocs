@@ -30,62 +30,37 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Edit Barang</h1>
+          </div>
 
           <!-- Content -->
-          <div class="card" style="width: 95%;">
-            <div class="card-header">
-              <h4 class="m-0 font-weight-bold text-primary"><i class="fas fa-user-tie" style="margin-right: 10px;"></i>Edit Admin</h4>
-            </div>
-            <div class="card-body">
-
           <?php foreach($dataadmin as $row){ ?>
-          <form method="POST" action="<?php echo base_url(). 'index.php/admin/c_admin/update'; ?>" enctype="multipart/form-data">
+          <form method="POST" action="<?php echo base_url(). 'index.php/admin/c_admin/update'; ?>" enctype="multipart/form-data" style="margin-left: 20px;margin-top: 15px;margin-right: 500px;">
           
           <div class="form-group" hidden>
             <input type="text" class="form-control" placeholder="Id Admin" name="id_admin" value="<?php echo $row->id_admin ?>">
           </div>
 
-          <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Nama</label>
-            <div class="col-sm-10">
+          <div class="form-group">
             <input type="text" class="form-control" placeholder="Nama" name="nama" value="<?php echo $row->nama ?>">
           </div>
-        </div>
           
-          <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Username</label>
-            <div class="col-sm-10">
+          <div class="form-group">
             <input type="text" class="form-control" placeholder="Username" name="username"value="<?php echo $row->username ?>">
           </div>
-        </div>
           
-          <div class="form-group row" hidden>
-            <label class="col-sm-2 col-form-label">Password</label>
-            <div class="col-sm-10">
+          <div class="form-group">
             <input type="text" class="form-control" placeholder="Password" name="password" value="<?php echo $row->password ?>">
           </div>
-        </div>
 
-          <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Level</label>
-            <div class="col-sm-10">
-            <select name="level">
-              <option value="<?php echo $row->level ?>"><?php echo $row->level ?></option>
-              <option value="">-- Ubah Kategori Lain --</option>
-              <option value="superadmin">Superadmin</option>
-              <option value="admin">Admin</option>
-            </select>
+          <div class="form-group">
+            <input type="text" class="form-control" name="level" value="<?php echo $row->level ?>">
           </div>
-        </div>
   
-          <div class="tombol" style="float: right;">
-          <a style="width: 100px;" class="btn btn-danger" href="<?php echo base_url('index.php/admin/c_admin'); ?>" role="button">Kembali</a>
-          <button style="width: 100px;margin-left: 10px;" type="submit" class="btn btn-primary" value="simpan" name="save">Save</button>
-        </div>
+          <button style="margin-bottom: 15px;" type="submit" class="btn btn-primary" value="simpan">Save</button>
         </form>
         <?php } ?>
-      </div>
-    </div>
       <!-- End of Main Content -->
 
       <!-- Footer -->

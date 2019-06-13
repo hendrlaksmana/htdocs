@@ -19,16 +19,17 @@
               <div class="site-top-icons">
                 <ul>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> parent of 54bb9f9... Merge branch 'master' of https://github.com/hendrlaksmana/htdocs
                   <li><a href="<?php echo base_url('index.php/login_member/') ?>" class="btn btn-light">Login</a></li>
-                  <li><a href="<?php echo base_url('index.php/member/c_daftar') ?>" class="btn btn-light" class="btn btn-light">Daftar</a></li>
+                  <li><a href="#" class="btn btn-light">Daftar</a></li>
             
 <li class="nav-item dropdown no-arrow">
-              <a class="nav-link" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><i class="icon icon-person" style="margin-right: 15px;"></i><?php echo $this->session->userdata('nama') ?></span>
-
-
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><i class="fas fa-user" style="margin-right: 15px;"></i><?php echo $this->session->userdata('nama') ?></span>
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
