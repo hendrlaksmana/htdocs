@@ -214,7 +214,7 @@ a {
   .site-navbar .site-navigation .site-menu {
     margin-bottom: 0; }
     .site-navbar .site-navigation .site-menu .active > a {
-      color: red; }
+      color: #7971ea; }
     .site-navbar .site-navigation .site-menu a {
       text-decoration: none !important;
       font-size: 15px;
@@ -230,7 +230,7 @@ a {
         font-size: 15px;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
-          color: white; }
+          color: #7971ea; }
     .site-navbar .site-navigation .site-menu .has-children {
       position: relative; }
       .site-navbar .site-navigation .site-menu .has-children > a {

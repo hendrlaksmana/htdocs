@@ -11,6 +11,7 @@
 			}
 
 			function hapus_data($where,$table){
+<<<<<<< HEAD
 				$this->db->select('*');
 				$this->db->from('transaksi');
 				$this->db->join('detail_transaksi','detail_transaksi.id_transaksi=transaksi.id_transaksi');
@@ -38,6 +39,8 @@
 
 			function del($where,$table){
 
+=======
+>>>>>>> parent of 356912a... update aboutus
 				$this->db->where($where);
 				$this->db->delete($table);
 			}

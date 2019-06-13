@@ -28,14 +28,12 @@
 		$foto = $this->_uploadImage();
 		$deskripsi = $this->input->post('deskripsi');
 		$tanggal = date("Y-m-d H:i:s");
-		$penulis = $this->input->post('penulis');
  
 		$data = array(
 			'judul_artikel' => $judul_artikel,
 			'foto' => $foto,
 			'deskripsi' => $deskripsi,
-			'tanggal' => $tanggal,
-			'penulis' => $penulis
+			'tanggal' => $tanggal
 			);
 
 		$this->m_artikel->input_data($data,'artikel');

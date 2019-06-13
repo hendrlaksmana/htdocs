@@ -57,11 +57,6 @@
             <label>Deskripsi</label>
             <textarea class="ckeditor" name="deskripsi"></textarea>
           </div>
-
-          <div class="form-group" hidden>
-            <input type="text" class="form-control" id="exampleInput" aria-describedby="emailHelp" name="penulis" value="<?php echo $this->session->userdata('nama') ?>">
-          </div>
-
           <div class="tombol" style="float: right;">
           <a style="width: 100px;" class="btn btn-danger" href="<?php echo base_url('index.php/admin/c_artikel'); ?>" role="button">Kembali</a>
           <button style="width: 100px; margin-left: 10px;" type="submit" class="btn btn-primary" value="tambah" name="save">Simpan</button>

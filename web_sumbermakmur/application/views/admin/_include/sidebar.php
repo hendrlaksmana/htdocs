@@ -12,7 +12,6 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <?php if($this->session->userdata('level')=='superadmin'):?>
       <li class="nav-item active">
         <a class="nav-link" href="<?php echo base_url('index.php/admin/') ?>">
           <i class="fas fa-fw fa-chart-area"></i>
@@ -88,8 +87,12 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu :</h6>
             <a class="collapse-item" href="<?php echo base_url('index.php/admin/c_transaksi') ?>">Transaksi</a>
+<<<<<<< HEAD
             <a class="collapse-item" href="<?php echo base_url('index.php/admin/c_verifikasi') ?>">Verifikasi</a>
 
+=======
+            <a class="collapse-item" href="#">Verifikasi</a>
+>>>>>>> parent of 356912a... update aboutus
           </div>
         </div>
       </li>
@@ -119,6 +122,7 @@
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
 
+<<<<<<< HEAD
     </ul>
 
     <?php else:?>
@@ -229,3 +233,6 @@
     </ul>
 
   <?php endif;?>
+=======
+    </ul>
+>>>>>>> parent of 356912a... update aboutus

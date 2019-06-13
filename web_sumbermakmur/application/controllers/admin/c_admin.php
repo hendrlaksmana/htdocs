@@ -10,11 +10,6 @@
 		}
 	 		$this->load->model("m_admin");
 	 			$this->load->helper('url');
-
-	 		if ($this->session->userdata('level') == "admin") {
-	 			echo "Anda tidak berhak mengakses halaman ini";
-	 			redirect(base_url("index.php/admin"));
-	 		}
 	 	}
 	 	
 	 	function index()

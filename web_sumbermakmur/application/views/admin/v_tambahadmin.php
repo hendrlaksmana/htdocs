@@ -40,12 +40,18 @@
 
           <form action="<?php echo base_url('index.php/admin/c_admin/tambah_aksi'); ?>" method="POST" enctype="multipart/form-data">
           
+<<<<<<< HEAD
 
           <div class="form-group row">
             <label for="nama" class="col-sm-2 col-form-label">Nama</label>
             <div class="col-sm-10">
 
             <input type="text" class="form-control" id="exampleInput" name="nama">
+=======
+          <div class="form-group">
+            <label for="nama" class="col-sm-3 col-form-label">Nama</label>
+            <input type="text" class="form-control" id="exampleInput" placeholder="Nama" name="nama">
+>>>>>>> parent of 356912a... update aboutus
           </div>
         </div>
           
@@ -56,12 +62,18 @@
           </div>
         </div>
           
+<<<<<<< HEAD
 
           <div class="form-group row">
             <label for="deskripsi" class="col-sm-2 col-form-label">Password</label>
             <div class="col-sm-10">
 
             <input type="password" class="form-control" id="exampleInput" name="password">
+=======
+          <div class="form-group">
+            <label for="deskripsi" class="col-sm-3 col-form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInput" placeholder="Password" name="password">
+>>>>>>> parent of 356912a... update aboutus
           </div>
         </div>
 
