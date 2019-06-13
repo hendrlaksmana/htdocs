@@ -21,7 +21,7 @@
 	 	function detail($id_transaksi)
 	 	{
 	 		$where = array('id_transaksi' => $id_transaksi);
-	 		$data['trans'] = $this->m_laporan->detailtr($where,'transaksi');
+	 		$data['trans'] = $this->m_laporan->detailtr($where,'laporan_transaksi');
 	 		$data['detail_transaksi'] = $this->m_laporan->detailtrans($where,'detail_transaksi');
 	 		$this->load->view("admin/v_detailtransaksi",$data);
 	 	}
