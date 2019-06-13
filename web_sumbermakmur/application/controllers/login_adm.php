@@ -5,12 +5,6 @@ class login_adm extends CI_Controller{
 	function __construct(){
 		parent::__construct();		
 		$this->load->model('m_login');
-		
-		// load Session Library
-        $this->load->library('session');
-         
-        // load url helper
-        $this->load->helper('url');
  
 	}
  
@@ -25,13 +19,11 @@ class login_adm extends CI_Controller{
 			'username' => $username,
 			'password' => md5($password)
 			);
-		$cek = $this->m_login->cek_login("dataadmin",$where)->row_array();
+		$cek = $this->m_login->cek_login("dataadmin",$where)->num_rows();
 		if($cek > 0){
  
 			$data_session = array(
-				'username' => $cek['username'],
-				'nama' => $cek['nama'],
-				'level' => $cek['level'],
+				'nama' => $username,
 				'status' => "login"
 				);
  

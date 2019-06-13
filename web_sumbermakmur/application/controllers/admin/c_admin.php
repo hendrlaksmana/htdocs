@@ -6,15 +6,10 @@
 	 	{
 	 		parent :: __construct();
 	 		if($this->session->userdata('status') != "login"){
-			redirect(base_url("index.php/login_adm"));
+			redirect(base_url("login_adm"));
 		}
 	 		$this->load->model("m_admin");
 	 			$this->load->helper('url');
-
-	 		if ($this->session->userdata('level') == "admin") {
-	 			echo "Anda tidak berhak mengakses halaman ini";
-	 			redirect(base_url("index.php/admin"));
-	 		}
 	 	}
 	 	
 	 	function index()
@@ -62,7 +57,7 @@
 			$data = array(
 				'nama' => $nama,
 				'username' => $username,
-				'password' => md5($password),
+				'password' => $password,
 				'level' => $level
 			);
 		 

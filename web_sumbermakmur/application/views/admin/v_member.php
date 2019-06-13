@@ -35,7 +35,7 @@
 
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h4 class="m-0 font-weight-bold text-primary"><i class="fas fa-fw fa-user" style="margin-right: 10px;"></i>Data Member<a class="btn btn-primary" style="float: right;" href="<?php echo base_url('index.php/admin/c_member/tambah') ?>"><i style="margin-right: 10px;" class="fas fa-plus-circle"></i>Tambah Data</a></h4>
+              <h4 class="m-0 font-weight-bold text-primary">Data Member<a class="btn btn-primary" style="float: right;" href="<?php echo base_url('index.php/admin/c_member/tambah') ?>">Tambah Data</a></h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -60,9 +60,8 @@
               <td><?php echo $row->no_telp; ?></td>
               <td><?php echo $row->email; ?></td>
               <td><?php echo $row->username; ?></td>
-              <td style="width: 20%;"><a href="<?php echo site_url('admin/c_member/edit/'.$row->id_member) ?>"
-                       class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-                  <a onclick="deleteConfirm('<?php echo site_url('admin/c_member/delete/'.$row->id_member) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a></td>
+              <td><?php echo anchor('admin/c_member/edit/'.$row->id_member,'Edit'); ?>
+                  <?php echo anchor('admin/c_member/delete/'.$row->id_member,'Hapus'); ?></td>
             </tr>
             <?php endforeach; ?>
           </tbody>
@@ -98,15 +97,6 @@
   <?php $this->load->view("admin/_include/logout_modal.php") ?>
 
   <?php $this->load->view("admin/_include/js.php") ?>
-
-  <?php $this->load->view("admin/_include/modal/modal_hapus.php") ?>
-
-  <script>
-  function deleteConfirm(url){
-    $('#btn-delete').attr('href', url);
-    $('#deleteModal').modal();
-  }
-  </script>
 
 </body>
 

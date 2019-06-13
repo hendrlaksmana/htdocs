@@ -11,9 +11,14 @@
 			}
 
 			function hapus_data($where,$table){
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 				$this->db->select('*');
 				$this->db->from('transaksi');
 				$this->db->join('detail_transaksi','detail_transaksi.id_transaksi=transaksi.id_transaksi');
+<<<<<<< HEAD
+
 				$this->db->where($where);
 				$this->db->delete($table);
 			}
@@ -36,37 +41,18 @@
 			}
 
 			function del($where,$table){
+
+=======
+>>>>>>> parent of 356912a... update aboutus
+=======
+>>>>>>> parent of 54bb9f9... Merge branch 'master' of https://github.com/hendrlaksmana/htdocs
+=======
+>>>>>>> parent of 356912a... update aboutus
+=======
+>>>>>>> parent of 356912a... update aboutus
 				$this->db->where($where);
 				$this->db->delete($table);
 			}
-
-			function detailtrans(){
-				// kalo di native : mysql_query("select *from barang")
-				$this->db->select('*');
-				$this->db->from('detail_transaksi');
-				$this->db->join('produk','produk.id_produk=detail_transaksi.id_produk');
-				$this->db->join('transaksi','transaksi.id_transaksi=detail_transaksi.id_transaksi');
-				$this->db->join('biaya_kirim','biaya_kirim.id_ongkir=transaksi.id_ongkir');
-				$this->db->join('datamember','datamember.id_member=transaksi.id_member');
-				$query = $this->db->get();
-				return $query->result();
-			}
-
-			function detailtr(){
-				// kalo di native : mysql_query("select *from barang")
-				$this->db->select('*');
-				$this->db->from('transaksi');
-				$this->db->join('biaya_kirim','biaya_kirim.id_ongkir=transaksi.id_ongkir');
-				$this->db->join('datamember','datamember.id_member=transaksi.id_member');
-				$this->db->join('detail_transaksi','transaksi.id_transaksi=detail_transaksi.id_transaksi');
-				$this->db->join('produk','produk.id_produk=detail_transaksi.id_produk');
-				$this->db->limit(1);
-				$querysql = $this->db->get();
-				return $querysql->result();
-			}
-
-
-
 
 		}
 ?>
