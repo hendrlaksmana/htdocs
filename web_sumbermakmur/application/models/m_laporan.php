@@ -38,7 +38,7 @@
 				return $query->result();
 			}
 
-			function detailtr(){
+			function detailtr($where){
 				// kalo di native : mysql_query("select *from barang")
 				$this->db->select('*');
 				$this->db->from('laporan_transaksi');
@@ -46,7 +46,6 @@
 				$this->db->join('datamember','datamember.id_member=laporan_transaksi.id_member');
 				$this->db->join('detail_transaksi','laporan_transaksi.id_transaksi=detail_transaksi.id_transaksi');
 				$this->db->join('produk','produk.id_produk=detail_transaksi.id_produk');
-				$this->db->limit(1);
 				$querysql = $this->db->get();
 				return $querysql->result();
 			}
