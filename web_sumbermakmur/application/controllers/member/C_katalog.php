@@ -29,6 +29,7 @@
 			$data['produk'] = $this->m_katalog->tampil_kategori($where,'produk')->result();
 			$this->load->view("member/v_katalog",$data);
 	 	}
+
 	 	function bibit(){
 	 		$where = array('kategori' => 'bibit');
 			$data['produk'] = $this->m_katalog->tampil_kategori($where,'produk')->result();
@@ -38,6 +39,15 @@
 	 		$where = array('kategori' => 'pupuk');
 			$data['produk'] = $this->m_katalog->tampil_kategori($where,'produk')->result();
 			$this->load->view("member/v_katalog",$data);
+	 	}
+
+
+	 	//menampilkan detail produk
+	 	//Ini sudah fix muncul
+	 	function detail_alat($id_produk){
+	 		$where = array('id_produk' => $id_produk);
+			$data['produk'] = $this->m_katalog->tampil_kategori($where,'produk')->result();
+			$this->load->view("member/v_kategorishow",$data);
 	 	}
 	 	
 

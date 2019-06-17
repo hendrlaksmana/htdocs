@@ -90,10 +90,13 @@
     if (!isset($_SESSION['nama'])) {
       echo '';
     }else{
-            echo ' <li><a href="" style="color:white;font-size: 18px">Keranjang</a></li>';
-            echo ' <li><a href="" style="color:white;font-size: 18px">verivikasi</a></li>';
-        }
-        ?>
+             ?> <?php   echo '<li>'; ?>
+        
+        <a href="<?php echo site_url('member/c_beli') ?>" style="color:white;font-size: 18px">Keranjang</a></li>
+        <a href="<?php echo site_url('member/c_verifikasi') ?>" style="color:white;font-size: 18px">VERIFIKASI</a></li>
+        
+      
+  <?php  } ?>
 
 
 

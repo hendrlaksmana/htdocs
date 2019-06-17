@@ -13,7 +13,7 @@
 
     <div class="site-section site-section-sm site-blocks-1" style="background-color: #f8f9fa">
  		 <div class="container">
- 		     
+ 		     <form method="post" action="<?php echo site_url();?>member/c_beli/tambah" method="post">
           <h2 style="margin-left: 30px;"> Data Barang </h2></>
 <div class="row" style="margin-top: 20px; margin-left: 20px;">
 
@@ -30,14 +30,17 @@
         <h5 align="center" style="background-color: #F4F8EF">Rp. <?php echo $row->harga ?>
 </h5>
             <div class="card-footer" align="center">
-              <a href="#" class="btn btn-primary btn-md">Beli</a>
-
+              <button type="submit" class="btn btn-sm btn-success"><i class="glyphicon glyphicon-shopping-cart"></i> Beli</button>
+              <a href="<?php echo site_url ('/member/c_katalog/detail_alat/'.$row->id_produk)?>" class="btn btn-success btn-md">Detail</a>
             </div>
+
       </div>
       </div>
       <?php } ?>
     </div>
- 		 </div>
+   
+ 		 </form>
+     </div>
 	</div>
 
     <footer class="site-footer border-top">

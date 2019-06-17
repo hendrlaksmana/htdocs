@@ -10,6 +10,5 @@
 			function tampil_kategori($where,$table){		
 				return $this->db->get_where($table,$where);
 			}
-	
 		}
 ?>
