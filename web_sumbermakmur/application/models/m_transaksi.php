@@ -10,6 +10,13 @@
 				return $query->result();
 			}
 
+			function tambah_transaksi($data)
+				{
+					$this->db->insert('transaksi', $data);
+					$id = $this->db->insert_id();
+					return (isset($id)) ? $id : FALSE;
+				}
+
 			function hapus_data($where,$table){
 				$this->db->select('*');
 				$this->db->from('transaksi');

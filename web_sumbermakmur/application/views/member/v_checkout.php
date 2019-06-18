@@ -15,7 +15,7 @@
  		 <div class="container">
      	<h4 style="padding-left: 30px;"> Checkout </h4>
       </br>    
-    <form method="post">
+    <form action="<?php echo site_url()?>/member/c_beli/proses_order" method="post" >
             
             <div class="form-grup" style="margin-left: 30px;">
             <div class="form-grup row">
@@ -24,18 +24,26 @@
             </div>&nbsp;
             <div class="form-grup row">
               <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Alamat</label>
-              <input type="text" readonly value=" <?php echo $_SESSION['nama'] ?>" class="form-control" style="width: 370px;">
+              <input type="text" readonly value=" <?php echo $_SESSION['alamat'] ?>" class="form-control" style="width: 370px;">
             </div>&nbsp;
             <div class="form-grup row">
               <label for="exampleInputEmail1" class="col-sm-2 col-form-label">No Telp</label>
-              <input type="text" readonly value=" <?php echo $_SESSION['nama'] ?>" class="form-control" style="width: 370px;">
+              <input type="text" readonly value=" <?php echo $_SESSION['no_telp'] ?>" class="form-control" style="width: 370px;">
             </div>&nbsp;
 
             <div class="form-grup row">
+
             <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Biaya Pengiriman</label>
             <select class="form-control" name="id_ongkir" style="width: 370px;">
-              <option value="<?php echo $_SESSION["nama"] ?>">
+<?php foreach ($biaya_kirim as $row) {
+  
+?>
+               <option value="<?php echo $row->id_ongkir; ?>">
+                <?php echo $row->nama_kota; ?> - 
+                Rp. <?php echo number_format($row->tarif); ?>
               </option>
+  
+  <?php } ?>
             </select>
         </div>
       </div>&nbsp;
@@ -79,6 +87,8 @@ $grand_total = $grand_total + $item['subtotal'];
 <td><?php echo number_format($item['price'], 0,",","."); ?></td>
 <td><?php echo number_format($item['subtotal'], 0,",",".") ?></td>
 <td><a href="<?php echo site_url()?>/member/c_beli/hapus/<?php echo $item['rowid'];?>" class="btn btn-sm btn-danger">Hapus</i></a></td>
+
+
 <?php endforeach; ?>
 </tr>
 <tr>
@@ -92,7 +102,7 @@ $grand_total = $grand_total + $item['subtotal'];
 
     <div class="lanjutan" style="margin-top: 50px; margin-left: 30px;">
       <p style="color: red;">Anda yakin ingin melanjutkan transaksi, Periksa Kembali data anda!!</p>
-      <a href="<?php echo site_url()?>/member/c_beli/nota"  class ='btn btn-sm btn-success'>Check Out</a></br>
+     <button type="submit" class="btn btn-primary">Proses Order</button>
     </div> 
 
 

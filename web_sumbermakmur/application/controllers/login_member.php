@@ -31,6 +31,9 @@ class login_member extends CI_Controller{
 			$data_session = array(
 				'username' => $cek['username'],
 				'nama' => $cek['nama'],
+				'email' => $cek['email'],
+				'alamat' => $cek['alamat'],
+				'no_telp' => $cek['no_telp'],
 				'status' => "login"
 				);
  

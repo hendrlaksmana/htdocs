@@ -24,14 +24,20 @@
         <strong><?php echo $_SESSION['nama'] ?></strong> <br>
         <p>
          <?php echo $_SESSION['email'] ?> <br>
+         <?php echo $_SESSION['alamat'] ?> <br>
+         <?php echo $_SESSION['no_telp'] ?> <br>
           
         </p>
       </div>
       &nbsp;
       <div class="alamat" style="margin-left: 30px; margin-top: 40px;">
-        Wilayah kirim : <br>
+
+        Wilayah kirim :  ; ?><br>
         Ongkos Kirim : Rp. <br>
+
+        
       </div>
+
       <div class="col-md-4"></div>
     </div>
 

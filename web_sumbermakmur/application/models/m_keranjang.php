@@ -4,6 +4,7 @@
 
 		function tampil_produk(){
 			return $this->db->get('produk')->result();
+
 			}
 
 		function tampil_transaksi(){
@@ -16,8 +17,14 @@
 				$this->db->join('datamember','datamember.id_member=transaksi.id_member');
 				$query = $this->db->get();
 				return $query->result();
-			}
+			
+}
+			
 
-		
+		function tampil_data(){
+				// kalo di native : mysql_query("select *from barang")
+				return $this->db->get('biaya_kirim')->result();
+
+			}
 }
 ?>

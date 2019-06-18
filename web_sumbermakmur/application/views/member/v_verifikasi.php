@@ -31,15 +31,14 @@
               <input type="text" readonly value=" <?php echo $_SESSION['email'] ?>" class="form-control" style="width: 370px;">
             </div>&nbsp;
 
-     <!--        <div class="form-grup row">
+        <div class="form-grup row">
        <label for="exampleInputEmail1" class="col-sm-3 col-form-label">Alamat</label>
        <input type="text" readonly value=" <?php echo $_SESSION['alamat'] ?>" class="form-control" style="width: 370px;">
      </div>&nbsp;
      <div class="form-grup row">
        <label for="exampleInputEmail1" class="col-sm-3 col-form-label">No Telp</label>
-       <input type="text" readonly value=" <?php echo $_SESSION['not_telp'] ?>" class="form-control" style="width: 370px;">
+       <input type="text" readonly value=" <?php echo $_SESSION['no_telp'] ?>" class="form-control" style="width: 370px;">
      </div>&nbsp;
-      -->
     
       <div class="form-group row">
         <label for="exampleFormControlFile1" class="col-sm-3 col-form-label">Bukti Transfer Bank</label>
