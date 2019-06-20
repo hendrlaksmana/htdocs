@@ -45,12 +45,14 @@
 			$id_ongkir = $this->input->post('id_ongkir');
 			$tanggal = date("Y-m-d H:i:s");
 			$total_pembelian = $this->input->post('total_pembelian');
+			$nama_admin = $this->input->post('nama_admin');
 		 
 			$data = array(
 				'id_member' => $id_member,
 				'id_ongkir' => $id_ongkir,
 				'tanggal' => $tanggal,
-				'total_pembelian' => $total_pembelian
+				'total_pembelian' => $total_pembelian,
+				'nama_admin' => $nama_admin
 			);
 		 
 			$where = array(

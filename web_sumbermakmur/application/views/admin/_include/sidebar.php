@@ -152,7 +152,7 @@
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-tags"></i>
+          <i class="fas fa-gifts"></i>
           <span>Barang</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -204,14 +204,15 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseReport" aria-expanded="true" aria-controls="collapseReport">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Laporan Keuangan</span>
+          <span>Laporan</span>
         </a>
         <div id="collapseReport" class="collapse" aria-labelledby="headingReport" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu :</h6>
-            <a class="collapse-item" href="#">Laporan Harian</a>
+            <a class="collapse-item" href="<?php echo base_url('index.php/admin/c_laporan') ?>">Laporan Transaksi</a>
+            <!--<a class="collapse-item" href="#">Laporan Harian</a>
             <a class="collapse-item" href="#">Laporan Bulanan</a>
-            <a class="collapse-item" href="#">Laporan Tahunan</a>
+            <a class="collapse-item" href="#">Laporan Tahunan</a>-->
           </div>
         </div>
       </li>

@@ -18,3 +18,6 @@
   <script src="<?php echo base_url('js/demo/chart-pie-demo.js') ?>"></script>
   <script src="<?php echo base_url('js/demo/datatables-demo.js') ?>"></script>
   <script src="<?php echo base_url('assets/ckeditor/ckeditor.js') ?>"></script>
+
+  <!-- fancybox -->
+  <script src="<?php echo base_url('assets/fancybox/jquery.fancybox.min.js') ?>"></script>

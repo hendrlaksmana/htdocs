@@ -70,12 +70,19 @@
           </div>
           </div>
 
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Admin</label>
+            <div class="col-sm-10">
+            <input type="text" class="form-control" id="exampleInput" placeholder="Nama Admin" name="nama_admin" value="<?php echo $this->session->userdata('nama') ?>" readonly>
+          </div>
+          </div>
+
           <div>
             <label style="color: red;">* Proses Transaksi selesai!!! pastikan anda melakukan pengecekan secara manual di menu verifikasi dan menu transaksi pastikan data transaksi telah sesuai</label>
           </div>
 
           <div class="tombol" style="float: right;">
-          <button style="width: 100px;" id="cancel" name="cancel" class="btn btn-danger" value="1">Batal</button>
+          <a style="width: 100px;" class="btn btn-danger" href="<?php echo base_url('index.php/admin/c_transaksi'); ?>" role="button">Kembali</a>
           <button style="width: 100px;margin-left: 10px;" type="submit" class="btn btn-primary" value="simpan" name="save">Save</button>
         </div>
         </form>

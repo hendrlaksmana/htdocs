@@ -60,7 +60,7 @@
               <td><?php echo $row->email; ?></td>
               <td><?php echo $row->alamat; ?></td>
               <td><?php echo $row->no_telp; ?></td>
-              <td><img style="width: 100px;height: 100px;" src="<?php echo base_url() ?>assets/upload/transfer_bank/<?php echo $row->foto_transferbank ?>"></td>
+              <td><a href="<?php echo base_url() ?>assets/upload/transfer_bank/<?php echo $row->foto_transferbank ?>" data-fancybox data-caption="Foto Transfer Bank"><img style="width: 100px;height: 100px;" src="<?php echo base_url() ?>assets/upload/transfer_bank/<?php echo $row->foto_transferbank ?>"></a></td>
               <td><a onclick="deleteConfirm('<?php echo site_url('admin/c_verifikasi/delete/'.$row->id_verifikasi) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a></td></td>
             </tr>
             <?php endforeach; ?>

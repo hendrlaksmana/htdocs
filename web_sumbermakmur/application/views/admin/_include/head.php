@@ -14,3 +14,10 @@
   <!-- Custom styles for this template-->
   <link href="<?php echo base_url('css/sb-admin-2.min.css') ?>" rel="stylesheet">
   <link href="<?php echo base_url('assets/datatables/dataTables.bootstrap4.min.css') ?>" rel="stylesheet">
+
+  <!-- fancybox-->
+  <!--<script type="text/javascript" src="<?php echo base_url('assets/fancybox/jquery.fancybox.js') ?>"></script>
+  <script type="text/javascript" src="<?php echo base_url('assets/fancybox/jquery.fancybox.js') ?>"></script> -->
+
+  <!-- fancybox -->
+  <link rel="stylesheet" href="<?php echo base_url('assets/fancybox/jquery.fancybox.min.css') ?>" />

@@ -45,6 +45,7 @@
               <th scope="col" style="width: 200px;">Nama</th>
               <th scope="col">Tanggal</th>
               <th scope="col">Total Pembelian</th>
+              <th scope="col">Admin</th>
               <th scope="col">Aksi</th>
             </tr>
           </thead>
@@ -55,6 +56,7 @@
               <td><?php echo $row->nama; ?></td>
               <td><?php echo $row->tanggal; ?></td>
               <td><?php echo $row->total_pembelian; ?></td>
+              <td><?php echo $row->nama_admin; ?></td>
               <td style="width: 20%;"><a href="<?php echo site_url('admin/c_laporan/detail/'.$row->id_transaksi) ?>"
                        class="btn btn-small"><i class="fas fa-info-circle"></i>Detail</a>
                   <a onclick="deleteConfirm('<?php echo site_url('admin/c_laporan/delete/'.$row->id_transaksi) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a></td>
