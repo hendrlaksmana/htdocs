@@ -81,6 +81,47 @@
             <input type="password" class="form-control" id="exampleInput" name="password">
           </div>
         </div>
+
+        <div class="form-group row">
+            <label for="username" class="col-sm-2 col-form-label">Pertanyaan Keamanan 1</label>
+            <div class="col-sm-10">
+            <select name="pertanyaan_keamanan1">
+              <option value="Siapa nama teman dekat anda pada saat anda masih kecil?">Siapa nama teman dekat anda pada saat anda masih kecil?</option>
+              <option value="Siapa nama panggilan anda saat masih kecil?">Siapa nama panggilan anda saat masih kecil?</option>
+              <option value="Dikota mana anda dilahirkan?">Dikota mana anda dilahirkan?</option>
+              <option value="Apa warna favorite anda?">Apa warna favorite anda?</option>
+              <option value="Apa film favorite anda pada saat anda masih kecil?">Apa film favorite anda pada saat anda masih kecil?</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="username" class="col-sm-2 col-form-label">Jawaban</label>
+            <div class="col-sm-10">
+            <input type="text" class="form-control" id="exampleInput" aria-describedby="emailHelp" name="jawaban1">
+          </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="username" class="col-sm-2 col-form-label">Pertanyaan Keamanan 2</label>
+            <div class="col-sm-10">
+            <select name="pertanyaan_keamanan2">
+              <option value="Siapa nama orang tua yang melahirkan anda?">Siapa nama orang tua yang melahirkan anda?</option>
+              <option value="Dikota mana tempat orang tua anda tinggal?">Dikota mana tempat orang tua anda tinggal?</option>
+              <option value="Siapa orang yang paling berpengaruh dalam hidup anda?">Siapa orang yang paling berpengaruh dalam hidup anda?</option>
+              <option value="Siapa nama artis yang paling anda kagumi?">Siapa nama artis yang paling anda kagumi?</option>
+              <option value="Sebutkan tempat liburan yang anda ingin kunjungi?">Sebutkan tempat liburan yang anda ingin kunjungi?</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="username" class="col-sm-2 col-form-label">Jawaban</label>
+            <div class="col-sm-10">
+            <input type="text" class="form-control" id="exampleInput" aria-describedby="emailHelp" name="jawaban2">
+          </div>
+        </div>
+
   
           <div class="tombol" style="float: right;">
           <a style="width: 100px;" class="btn btn-danger" href="<?php echo base_url('index.php/admin/c_member'); ?>" role="button">Kembali</a>

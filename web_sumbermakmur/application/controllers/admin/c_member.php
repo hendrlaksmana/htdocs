@@ -30,6 +30,10 @@
 		$email = $this->input->post('email');
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
+		$pertanyaan_keamanan1 = $this->input->post('pertanyaan_keamanan1');
+		$jawaban1 = $this->input->post('jawaban1');
+		$pertanyaan_keamanan2 = $this->input->post('pertanyaan_keamanan2');
+		$jawaban2 = $this->input->post('jawaban2');
  
 		$data = array(
 			'nama' => $nama,
@@ -37,7 +41,11 @@
 			'no_telp' => $no_telp,
 			'email' => $email,
 			'username' => $username,
-			'password' => md5($password)
+			'password' => md5($password),
+			'pertanyaan_keamanan1' => $pertanyaan_keamanan1,
+			'jawaban1' => $jawaban1,
+			'pertanyaan_keamanan2' => $pertanyaan_keamanan2,
+			'jawaban2' => $jawaban2
 			);
 
 		$this->m_member->input_data($data,'datamember');

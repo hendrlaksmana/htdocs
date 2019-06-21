@@ -11,11 +11,11 @@
 			}
 
 			function tambah_pelanggan($data)
-				{
-					$this->db->insert('tbl_pelanggan', $data);
-					$id = $this->db->insert_id();
-					return (isset($id)) ? $id : FALSE;
-				}
+			{
+				$this->db->insert('tbl_pelanggan', $data);
+				$id = $this->db->insert_id();
+				return (isset($id)) ? $id : FALSE;
+			}
 
 			function edit_data($where,$table){		
 				return $this->db->get_where($table,$where);
