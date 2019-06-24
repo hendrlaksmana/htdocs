@@ -24,9 +24,10 @@
 <?php
     if (!isset($_SESSION['nama'])) {
      ?> <?php   echo '<li>'; ?>
-        
+
         <a href="<?php echo site_url('login_member') ?>" class="btn btn-light" class="btn btn-light">Login</a></li>
         <a href="<?php echo site_url('member/C_daftar') ?>" class="btn btn-light" class="btn btn-light">daftar</a></li>
+
 
       
   <?php  } 
@@ -52,14 +53,22 @@
                 </a>
               </div>
             </li>
-<!-- 
-                  <li>
-                    <a href="cart.html" class="site-cart">
+
+            <?php  $cart = $this->cart->contents(); ?>
+
+   <!--  Create form and send all values in "shopping/update_cart" function.--><?php
+  
+          foreach ($cart as $item):;
+          ?>
+
+
+    <?php endforeach; ?>
+            <li>                              <a href="<?php echo site_url('member/c_beli') ?>" class="site-cart">
                       <span class="icon icon-shopping_cart"></span>
-                      <span class="count">999</span> 
+                      <span class="count"><?php echo count($cart); ?></span> 
                     </a>
-                  </li>  -->
-                  <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
+                  </li>
+                                    <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
                 </ul>
               </div>
 
@@ -76,8 +85,10 @@
               <a href="<?php echo base_url() ?>" style="color:white;font-size: 18px">Home</a>
             </li>
             <li class="has-children">
-              <a href="#" style="color:white;font-size: 18px">Katalog</a>
+              <a href="<?php echo site_url('member/c_katalog') ?>" style="color:white;font-size: 18px">Katalog</a>
               <ul class="dropdown">
+
+                <li><a href="<?php echo site_url('member/c_katalog') ?>">SEMUA KATEGORI</a></li>
                 <li><a href="<?php echo base_url('index.php/member/c_katalog/alat_pertanian') ?>">Alat Pertanian</a></li>
                 <li><a href="<?php echo base_url('index.php/member/c_katalog/benih') ?>">Benih</a></li>
                 <li><a href="<?php echo base_url('index.php/member/c_katalog/bibit') ?>">Bibit</a></li>

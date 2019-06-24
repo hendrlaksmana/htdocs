@@ -1,18 +1,20 @@
 <?php
+if (!defined('BASEPATH')) exit('No direct script access allowed');
 	 class C_beli extends CI_Controller
 	 {
-		public 	function __construct()
+		function __construct()
 		{
 	 		parent :: __construct();
-	 		if($this->session->userdata('status') != "login") {
-			redirect(base_url("index.php/login_member"));	
-		}
-
-	 		$this->load->model("m_keranjang");
+	 			$this->load->library('cart');
+	 			$this->load->model("m_keranjang");
 	 		$this->load->model("m_transaksi");
 	 		$this->load->model("m_member");
 			$this->load->helper('url');
-			$this->load->library('cart');
+
+	 		if($this->session->userdata('status') != "login") 
+			redirect(base_url("index.php/login_member"));	
+		
+	 		
 	 	}
 	 	
 	 	//Tampil keranjang
@@ -24,21 +26,15 @@
 
 	 	function tambah()
 			{
-				$id = $this->input->post('id');
-				$qty = $this->input->post('qty');
-				$price = $this->input->post('price');
-				$name = $this->input->post('name');
-				
-			
-			$data = array( 	'id' => $id, 
-							'qty' => $qty,
-							'price' => $price,
-							'name' => $name
+		$data_produk= array('id' => $this->input->post('id'),
+							 'name' => $this->input->post('nama'),
+							 'price' => $this->input->post('harga'),
+							 'gambar' => $this->input->post('gambar'),
+							 'qty' =>$this->input->post('1')
 							);
-
-				$this->cart->insert($data);
-				redirect('member/c_beli','refresh');
-			}
+		$this->cart->insert($data_produk);
+		redirect('member/c_katalog');
+		}
 
 		function checkout()
 	 	{

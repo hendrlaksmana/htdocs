@@ -10,12 +10,12 @@
 	 			$this->load->helper('url');
 	 	}
 	 	
-	 	/*
+	 	
 	 	function index()
 	 	{
 	 		$data['produk']=$this->m_katalog->tampil_data();
-	 		$this->load->view("member/v_katalog",$data);
-	 	}*/
+	 		$this->load->view("member/v_katalog_semua",$data);
+	 	}
 
 	 	//menampilkan produk
 	 	function alat_pertanian(){

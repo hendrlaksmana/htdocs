@@ -42,7 +42,7 @@ class login_member extends CI_Controller{
 			redirect(base_url(''));
  
 		}else{
-			echo "Password salah !";
+			$this->load->view('v_login_member_fail');
 		}
 	}
  

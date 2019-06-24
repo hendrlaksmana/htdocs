@@ -13,7 +13,7 @@
 
     <div class="site-section site-section-sm site-blocks-1" style="background-color: #f8f9fa">
  		 <div class="container" style="text-align: left">
-      <form method="post" action="<?php echo site_url();?>/member/c_beli/tambah" method="post">
+      <form action="<?php echo site_url()?>member/c_beli" method="post">
       
 
           <table class="tables" style="margin-top: 30px">
