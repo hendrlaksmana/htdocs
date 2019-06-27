@@ -17,31 +17,38 @@
      <form action="<?php echo base_url('index.php/member/c_daftar/tambah_aksi'); ?>" method="POST" enctype="multipart/form-data" style="margin-left: 30px;">
       <div class="form-group row">
         <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Nama</label>
-        <input type="text" class="form-control" name="nama" placeholder="Nama" style="width: 370px;">
+        <input type="text" class="form-control" name="nama" placeholder="Nama" required="" oninvalid="this.setCustomValidity('Harap mengisi kolom nama')"
+ oninput="setCustomValidity('')" style="width: 370px;">
       </div>
       <div class="form-group row">
         <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Alamat</label>
-        <input type="text" class="form-control" name="alamat" placeholder="Alamat" style="width: 370px;">
+        <input type="text" class="form-control" name="alamat" required="" oninvalid="this.setCustomValidity('Harap mengisi kolom alamat')"
+ oninput="setCustomValidity('')" placeholder="Alamat" required="required" style="width: 370px;">
       </div>
       <div class="form-group row">
         <label for="exampleInputEmail1" class="col-sm-2 col-form-label">No Telp</label>
-        <input type="number" class="form-control" name="no_telp" placeholder="No Telp" style="width: 370px;">
+        <input type="number" class="form-control" name="no_telp" required="required" oninvalid="this.setCustomValidity('Harap mengisi kolom no telp')"
+ oninput="setCustomValidity('')" placeholder="No Telp" style="width: 370px;">
       </div>
       <div class="form-group row">
         <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Email</label>
-        <input type="email" class="form-control" name="email" placeholder="Email" style="width: 370px;">
+        <input type="email" class="form-control" name="email" required="required" oninvalid="this.setCustomValidity('Harap mengisi kolom email')"
+ oninput="setCustomValidity('')" placeholder="Email" style="width: 370px;">
       </div>
       <div class="form-group row">
         <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Username</label>
-        <input type="text" class="form-control" name="username" placeholder="Username" style="width: 370px;">
+        <input type="text" class="form-control" name="username" required="required" oninvalid="this.setCustomValidity('Harap mengisi kolom username')"
+ oninput="setCustomValidity('')" placeholder="Username" style="width: 370px;">
       </div>
       <div class="form-group row">
         <label for="exampleInputPassword1" class="col-sm-2 col-form-label">Password</label>
-        <input type="password" class="form-control" name="password" placeholder="Password" style="width: 370px;">
+        <input type="password" class="form-control" name="password" required="required" oninvalid="this.setCustomValidity('Harap mengisi kolom password')"
+ oninput="setCustomValidity('')" placeholder="Password" style="width: 370px;">
       </div>
       <div class="form-group row">
         <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Pertanyaan1</label>
-        <select name="pertanyaan_keamanan1">
+        <select name="pertanyaan_keamanan1" required="required" oninvalid="this.setCustomValidity('Harap mengisi kolom pertanyaan keamanan 1')"
+ oninput="setCustomValidity('')">
               <option value="Siapa nama teman dekat anda pada saat anda masih kecil?">Siapa nama teman dekat anda pada saat anda masih kecil?</option>
               <option value="Siapa nama panggilan anda saat masih kecil?">Siapa nama panggilan anda saat masih kecil?</option>
               <option value="Dikota mana anda dilahirkan?">Dikota mana anda dilahirkan?</option>
@@ -51,11 +58,13 @@
       </div>
       <div class="form-group row">
         <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Email</label>
-        <input type="text" class="form-control" name="jawaban1" placeholder="jawaban1" style="width: 370px;">
+        <input type="text" class="form-control" name="jawaban1" required="required" oninvalid="this.setCustomValidity('Harap mengisi kolom jawaban1')"
+ oninput="setCustomValidity('')" placeholder="jawaban1" style="width: 370px;">
       </div>
       <div class="form-group row">
         <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Pertanyaan2</label>
-        <select name="pertanyaan_keamanan2">
+        <select name="pertanyaan_keamanan2" required="required" oninvalid="this.setCustomValidity('Harap mengisi kolom pertanyaan keamanan2')"
+ oninput="setCustomValidity('')">
               <option value="Siapa nama orang tua yang melahirkan anda?">Siapa nama orang tua yang melahirkan anda?</option>
               <option value="Dikota mana tempat orang tua anda tinggal?">Dikota mana tempat orang tua anda tinggal?</option>
               <option value="Siapa orang yang paling berpengaruh dalam hidup anda?">Siapa orang yang paling berpengaruh dalam hidup anda?</option>
@@ -65,7 +74,8 @@
       </div>
       <div class="form-group row">
         <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Email</label>
-        <input type="text" class="form-control" name="jawaban2" placeholder="jawaban2" style="width: 370px;">
+        <input type="text" class="form-control" name="jawaban2" required="required" oninvalid="this.setCustomValidity('Harap mengisi kolom email')"
+ oninput="setCustomValidity('')" placeholder="jawaban2" style="width: 370px;">
       </div>
       <p style="color: red;"> Pastikan semua informasi telah terisi dengan benar!</p>
       <button type="submit" name="save" class="btn btn-primary">Daftar</button>
