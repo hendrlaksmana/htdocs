@@ -49,7 +49,7 @@
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Nama Produk</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Nama Produk" name="nama_produk" value="<?php echo $row->nama_produk ?>">
+            <input type="text" class="form-control" id="exampleInput" placeholder="Nama Produk" name="nama_produk" value="<?php echo $row->nama_produk ?>" required="required">
           </div>
           </div>
 
@@ -70,14 +70,14 @@
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Deskripsi</label>
             <div class="col-sm-10">
-            <textarea style="width: 500px; height: 100px;" name="deskripsi" placeholder="deskripsi"><?php echo $row->deskripsi ?></textarea>
+            <textarea style="width: 500px; height: 100px;" name="deskripsi" required="required" placeholder="deskripsi"><?php echo $row->deskripsi ?></textarea>
           </div>
           </div>
 
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Harga</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Harga" name="harga" value="<?php echo $row->harga ?>">
+            <input type="text" class="form-control" id="exampleInput" placeholder="Harga" required="required" name="harga" value="<?php echo $row->harga ?>">
           </div>
           </div>
 

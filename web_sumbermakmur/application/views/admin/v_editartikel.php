@@ -47,11 +47,11 @@
           </div>
           
           <div class="form-group">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Judul" name="judul_artikel" value="<?php echo $row->judul_artikel ?>">
+            <input type="text" class="form-control" id="exampleInput" placeholder="Judul" name="judul_artikel" value="<?php echo $row->judul_artikel ?>" required="required">
           </div>
           
           <div class="form-group">
-            <textarea class="ckeditor" name="deskripsi" style="width: 80%;"><?php echo $row->deskripsi ?></textarea>
+            <textarea class="ckeditor" required="required" name="deskripsi" style="width: 80%;"><?php echo $row->deskripsi ?></textarea>
           </div>
 
           <div class="tombol" style="float: right;">

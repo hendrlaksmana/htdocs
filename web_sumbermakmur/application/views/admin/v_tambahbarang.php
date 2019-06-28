@@ -43,7 +43,7 @@
           <div class="form-group row">
             <label for="nama_produk" class="col-sm-2 col-form-label">Nama Produk</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Nama Produk" name="nama_produk">
+            <input type="text" class="form-control" id="exampleInput" placeholder="Nama Produk" name="nama_produk" required="required">
           </div>
         </div>
 
@@ -69,14 +69,14 @@
           <div class="form-group row">
             <label for="deskripsi" class="col-sm-2 col-form-label">Deskripsi</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Deskripsi" name="deskripsi">
+            <input type="text" class="form-control" id="exampleInput" placeholder="Deskripsi" name="deskripsi" required="required">
           </div>
         </div>
           
           <div class="form-group row">
             <label for="harga" class="col-sm-2 col-form-label">Harga</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Harga" name="harga">
+            <input type="text" class="form-control" id="exampleInput" placeholder="Harga" name="harga" required="required">
           </div>
         </div>
   

@@ -48,21 +48,21 @@
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Nama</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Nama" name="nama" value="<?php echo $row->nama ?>">
+            <input type="text" class="form-control" placeholder="Nama" name="nama" value="<?php echo $row->nama ?>" required="required">
           </div>
         </div>
           
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Username</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Username" name="username"value="<?php echo $row->username ?>">
+            <input type="text" class="form-control" placeholder="Username" name="username"value="<?php echo $row->username ?>" required="required">
           </div>
         </div>
           
           <div class="form-group row" hidden>
             <label class="col-sm-2 col-form-label">Password</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Password" name="password" value="<?php echo $row->password ?>">
+            <input type="text" class="form-control" placeholder="Password" name="password" value="<?php echo $row->password ?>" required="required">
           </div>
         </div>
 

@@ -43,21 +43,21 @@
           <div class="form-group row">
             <label for="nama" class="col-sm-2 col-form-label">Nama</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" name="nama">
+            <input type="text" class="form-control" id="exampleInput" name="nama" required="required">
           </div>
         </div>
           
           <div class="form-group row">
             <label for="username" class="col-sm-2 col-form-label">Username</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" aria-describedby="emailHelp" name="username">
+            <input type="text" class="form-control" id="exampleInput" aria-describedby="emailHelp" name="username" required="required">
           </div>
         </div>
           
           <div class="form-group row">
             <label for="deskripsi" class="col-sm-2 col-form-label">Password</label>
             <div class="col-sm-10">
-            <input type="password" class="form-control" id="exampleInput" name="password">
+            <input type="password" class="form-control" id="exampleInput" name="password" required="required">
           </div>
         </div>
 

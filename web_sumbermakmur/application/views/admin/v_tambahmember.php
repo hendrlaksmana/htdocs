@@ -43,42 +43,42 @@
           <div class="form-group row">
             <label for="nama" class="col-sm-2 col-form-label">Nama</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" name="nama">
+            <input type="text" class="form-control" id="exampleInput" name="nama" required="required">
           </div>
         </div>
 
           <div class="form-group row">
             <label for="nama" class="col-sm-2 col-form-label">Alamat</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" name="alamat">
+            <input type="text" class="form-control" id="exampleInput" name="alamat" required="required">
           </div>
         </div>
 
           <div class="form-group row">
             <label for="nama" class="col-sm-2 col-form-label">No Telp</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" name="no_telp">
+            <input type="text" class="form-control" id="exampleInput" name="no_telp" required="required">
           </div>
         </div>
 
           <div class="form-group row">
             <label for="nama" class="col-sm-2 col-form-label">E-Mail</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" name="email">
+            <input type="text" class="form-control" id="exampleInput" name="email" required="required">
           </div>
         </div>
           
           <div class="form-group row">
             <label for="username" class="col-sm-2 col-form-label">Username</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" aria-describedby="emailHelp" name="username">
+            <input type="text" class="form-control" id="exampleInput" aria-describedby="emailHelp" name="username" required="required">
           </div>
         </div>
           
           <div class="form-group row">
             <label for="deskripsi" class="col-sm-2 col-form-label">Password</label>
             <div class="col-sm-10">
-            <input type="password" class="form-control" id="exampleInput" name="password">
+            <input type="password" class="form-control" id="exampleInput" name="password" required="required">
           </div>
         </div>
 
@@ -98,7 +98,7 @@
         <div class="form-group row">
             <label for="username" class="col-sm-2 col-form-label">Jawaban</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" aria-describedby="emailHelp" name="jawaban1">
+            <input type="text" class="form-control" id="exampleInput" aria-describedby="emailHelp" name="jawaban1" required="required">
           </div>
         </div>
 
@@ -118,7 +118,7 @@
         <div class="form-group row">
             <label for="username" class="col-sm-2 col-form-label">Jawaban</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" aria-describedby="emailHelp" name="jawaban2">
+            <input type="text" class="form-control" id="exampleInput" aria-describedby="emailHelp" name="jawaban2" required="required">
           </div>
         </div>
 

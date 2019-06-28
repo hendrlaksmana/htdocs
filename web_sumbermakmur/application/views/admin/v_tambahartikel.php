@@ -42,7 +42,7 @@
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Judul Artikel</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Judul Artikel" name="judul_artikel">
+            <input type="text" class="form-control" id="exampleInput" placeholder="Judul Artikel" name="judul_artikel" required="required">
           </div>
         </div>
           
@@ -55,7 +55,7 @@
           
           <div class="form-group">
             <label>Deskripsi</label>
-            <textarea class="ckeditor" name="deskripsi"></textarea>
+            <textarea class="ckeditor" name="deskripsi" required="required"></textarea>
           </div>
 
           <div class="form-group" hidden>

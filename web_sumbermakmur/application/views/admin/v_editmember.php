@@ -42,41 +42,41 @@
           <form action="<?php echo base_url(). 'index.php/admin/c_member/update'; ?>" method="POST" enctype="multipart/form-data">
           
           <div class="form-group" hidden>
-            <input type="text" class="form-control" placeholder="Id Member" name="id_member" value="<?php echo $row->id_member ?>">
+            <input type="text" class="form-control" placeholder="Id Member" name="id_member" value="<?php echo $row->id_member ?>" required="required">
           </div>
 
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Nama</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Nama" name="nama" value="<?php echo $row->nama ?>">
+            <input type="text" class="form-control" id="exampleInput" placeholder="Nama" name="nama" value="<?php echo $row->nama ?>" required="required">
           </div>
         </div>
 
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Alamat</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Alamat" name="alamat" value="<?php echo $row->alamat ?>">
+            <input type="text" class="form-control" id="exampleInput" placeholder="Alamat" name="alamat" value="<?php echo $row->alamat ?>" required="required">
           </div>
         </div>
 
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">No Telp</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="No Telp" name="no_telp" value="<?php echo $row->no_telp ?>">
+            <input type="text" class="form-control" id="exampleInput" placeholder="No Telp" name="no_telp" value="<?php echo $row->no_telp ?>" required="required">
           </div>
         </div>
 
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">E-Mail</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="E-Mail" name="email" value="<?php echo $row->email ?>">
+            <input type="text" class="form-control" id="exampleInput" placeholder="E-Mail" name="email" value="<?php echo $row->email ?>" required="required">
           </div>
         </div>
           
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Username</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Username" name="username"value="<?php echo $row->username ?>">
+            <input type="text" class="form-control" id="exampleInput" placeholder="Username" name="username"value="<?php echo $row->username ?>" required="required">
           </div>
         </div>
   
