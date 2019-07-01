@@ -15,7 +15,7 @@ class login_adm extends CI_Controller{
 	}
  
 	function index(){
-		$this->load->view('v_login');
+		$this->load->view('v_login_admin');
 	}
  
 	function aksi_login(){
@@ -40,7 +40,7 @@ class login_adm extends CI_Controller{
 			redirect(base_url("index.php/admin"));
  
 		}else{
-			echo "Username dan password salah !";
+			$this->load->view('v_login_admin_fail');
 		}
 	}
  
