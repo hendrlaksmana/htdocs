@@ -27,8 +27,8 @@
       <td style="text-align: center;"> Pergi ke Toko </td>
     </tr>
     <tr>
-      <td style="text-align: justify; padding-left: 30px; padding-right: 30px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
-      <td style="text-align: justify; padding-left: 30px; padding-right: 30px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+      <td style="text-align: justify; padding-left: 30px; padding-right: 30px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  pembayaran dengan cara tranfer BCA 0123456789 a.n. SUMBER MAKMUR. tranfer dapat dilakukan dengan cara datang ke ATM BCA, M-banking BCA, atau ATM apapun yang terdapat logo ATM bersama. setelah melakukan transfer, mohon menyimpan bukti tranfer guna melakukan konfirmasi. setelah melakukan transfer, segera lakukan verifikasi dengna cara mengisi data diri dan mengupload bukti tranfer. tunggu beberapa saat, maka pesanan anda akan segera di proses. </td>
+      <td style="text-align: justify; padding-left: 30px; padding-right: 30px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  pilih barang yang inginnkan di toko, setelah dirasa cukup, maka datang ke kasir yang terletak di depan. maka petugas kasir akan menghitung berapa yang anda harus bayarkan, setelah transaksi selesai, barang tersebut dapat anda bawa pulang.</td>
     </tr>
   </tbody>
 </table>
