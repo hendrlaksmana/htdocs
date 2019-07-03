@@ -1,8 +1,8 @@
 <?php
 	class m_artikel extends CI_Model
 	{
-			function tampil_data($limit, $start){
-				$query = $this->db->get('artikel',$limit, $start)->result();
+			function tampil_data(){
+				$query = $this->db->get('artikel')->result();
 				return $query;
 			}
 
