@@ -42,6 +42,10 @@
                                     <input type="hidden" name="qty" value="1" /> -->
                 </div>
               </form>
+                <div class="col" style="margin-top: 10px">
+            <!--Tampilkan pagination-->
+            <?php echo $pagination; ?>
+        </div>
           </div>
     	 </div>
 

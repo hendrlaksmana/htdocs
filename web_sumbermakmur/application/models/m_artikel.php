@@ -1,9 +1,9 @@
 <?php
 	class m_artikel extends CI_Model
 	{
-			function tampil_data(){
-				// kalo di native : mysql_query("select *from barang")
-				return $this->db->get('artikel')->result();
+			function tampil_data($limit, $start){
+				$query = $this->db->get('artikel',$limit, $start)->result();
+				return $query;
 			}
 
 			/*	function show(){
