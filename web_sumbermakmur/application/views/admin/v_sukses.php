@@ -50,31 +50,26 @@
           </div>
           
           <div class="form-group row">
-            <label class="col-sm-2 col-form-label">ID Member</label>
+            <label class="col-sm-2 col-form-label">Nama</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Id Member" name="id_member" value="<?php echo $row->id_member ?>" readonly>
+            <input type="hidden" class="form-control" id="exampleInput" placeholder="Id Member" name="id_member" value="<?php echo $row->id_member ?>" readonly>
+            <input type="text" class="form-control" id="exampleInput" value="<?php echo $row->nama ?>" readonly>
           </div>
           </div>
 
-          <div class="form-group row">
-            <label class="col-sm-2 col-form-label">ID Ongkir</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Id Ongkir" name="id_ongkir" value="<?php echo $row->id_ongkir ?>" readonly>
-          </div>
+          <div class="ongkir_barang">
+            <input type="hidden" class="form-control" id="exampleInput" placeholder="Id Ongkir" name="id_ongkir" value="<?php echo $row->id_ongkir ?>" readonly>
           </div>
 
           <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Total</label>
+            <label class="col-sm-2 col-form-label">Total Pembelian</label>
             <div class="col-sm-10">
             <input type="text" class="form-control" id="exampleInput" placeholder="Total" name="total_pembelian" value="<?php echo $row->total_pembelian ?>" readonly>
           </div>
           </div>
 
-          <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Admin</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Nama Admin" name="nama_admin" value="<?php echo $this->session->userdata('nama') ?>" readonly>
-          </div>
+          <div class="admin_operasional">
+            <input type="hidden" class="form-control" id="exampleInput" placeholder="Nama Admin" name="nama_admin" value="<?php echo $this->session->userdata('nama') ?>" readonly>
           </div>
 
           <div>

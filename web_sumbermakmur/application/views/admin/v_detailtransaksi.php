@@ -50,7 +50,7 @@
                   E-mail : &nbsp; <?php echo $row->email; ?><br>
                   No. Telp : &nbsp; <?php echo $row->no_telp; ?><br>
                   Alamat : &nbsp; <?php echo $row->nama_kota; ?><br>
-                  Ongkos Kirim : &nbsp; Rp.<?php echo $row->tarif; ?><br>
+                  Ongkos Kirim : &nbsp; Rp.<?php echo number_format($row->tarif); ?><br>
                   &nbsp;
                 </div>
               <?php } ?>
@@ -71,12 +71,18 @@
             <tr>
               <th scope="row"> <?php echo $nomor ?></th>
               <td><?php echo $row->nama_produk; ?></td>
-              <td><?php echo $row->harga; ?></td>
+              <td>Rp.<?php echo number_format($row->harga); ?></td>
               <td><?php echo $row->jumlah; ?></td>
-              <td><?php echo $row->subharga; ?></td>
+              <td>Rp.<?php echo number_format($row->subharga); ?></td>
             </tr>
             <?php $nomor++ ?>
             <?php endforeach; ?>
+            <tr>
+              <?php foreach($trans as $row){?>
+                <td colspan="4">Total</td>
+                <td>Rp.<?php echo number_format($row->total_pembelian); ?></td>
+              <?php } ?>
+              </tr>
           </tbody>
         </table>
         <div class="tombol" style="float: right;">

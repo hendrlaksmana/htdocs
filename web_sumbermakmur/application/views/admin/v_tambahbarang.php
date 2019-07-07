@@ -76,7 +76,7 @@
           <div class="form-group row">
             <label for="harga" class="col-sm-2 col-form-label">Harga</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Harga" name="harga" required="required">
+            <input type="number" class="form-control" id="exampleInput" placeholder="Rp." name="harga" required="required">
           </div>
         </div>
   

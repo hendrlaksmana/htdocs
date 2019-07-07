@@ -55,7 +55,7 @@
               <th scope="row"> <?php echo $row->id_produk; ?></th>
               <td><?php echo $row->nama_produk; ?></td>
               <td><?php echo $row->tanggal; ?></td>
-              <td><?php echo $row->harga; ?></td>
+              <td><?php echo number_format($row->harga); ?></td>
               <td style="width: 20%;"><a href="<?php echo site_url('admin//c_barang/edit/'.$row->id_produk) ?>"
                        class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
                   <a onclick="deleteConfirm('<?php echo site_url('admin/c_barang/delete/'.$row->id_produk) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a></td>

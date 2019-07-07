@@ -55,7 +55,7 @@
               <th scope="row"> <?php echo $row->id_transaksi; ?></th>
               <td><?php echo $row->nama; ?></td>
               <td><?php echo $row->tanggal; ?></td>
-              <td><?php echo $row->total_pembelian; ?></td>
+              <td><?php echo number_format($row->total_pembelian); ?></td>
               <td><?php echo $row->nama_admin; ?></td>
               <td style="width: 20%;"><a href="<?php echo site_url('admin/c_laporan/detail/'.$row->id_transaksi) ?>"
                        class="btn btn-small"><i class="fas fa-info-circle"></i>Detail</a>

@@ -12,7 +12,7 @@
 	    	<H5>Laporan Transaksi</H5>
 	</div>
 	  <div class="card-body">
-	    <table class="table">
+	    <table class="table table-bordered">
 			  <thead class="thead-light">
 			    <tr>
 			      <th scope="col">ID</th>
@@ -27,9 +27,15 @@
 	              <th scope="row"> <?php echo $row->id_transaksi; ?></th>
 	              <td><?php echo $row->nama; ?></td>
 	              <td><?php echo $row->tanggal; ?></td>
-	              <td><?php echo $row->total_pembelian; ?></td>
+	              <td>Rp.<?php echo number_format($row->total_pembelian); ?></td>
 	            </tr>
 	            <?php endforeach; ?>
+	            <tr>
+	            	<?php foreach($total_hasil as $i){?>
+	            	<td colspan="3" style="background-color: #EAECF4;">Total</td>
+	            	<td style="background-color: #EAECF4;color: black">Rp.<?php echo number_format($i->total_jumlah); ?></td>
+	            <?php }; ?>
+	            </tr>
 			  </tbody>
 			</table>
 		  </div>
@@ -38,10 +44,6 @@
 		    <?php
 				 $tgl=date('d-m-Y');
 				 echo $tgl;
-			 ?>
-			 <?php
-				 $wkt=date('h:i:sa');
-				 echo $wkt;
 			 ?>
 		  </div>
 		</div>

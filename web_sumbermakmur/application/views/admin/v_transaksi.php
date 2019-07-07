@@ -54,7 +54,7 @@
               <th scope="row"> <?php echo $row->id_transaksi; ?></th>
               <td><?php echo $row->nama; ?></td>
               <td><?php echo $row->tanggal; ?></td>
-              <td><?php echo $row->total_pembelian; ?></td>
+              <td><?php echo number_format($row->total_pembelian); ?></td>
               <td><a href="<?php echo site_url('admin/c_transaksi/detail/'.$row->id_transaksi) ?>"
                        class="btn btn-small"><i class="fas fa-info-circle"></i>Detail</a>
                   

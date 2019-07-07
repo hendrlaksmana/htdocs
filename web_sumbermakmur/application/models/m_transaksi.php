@@ -34,7 +34,11 @@
 			}
 
 			function sukses_data($where,$table){		
-				return $this->db->get_where($table,$where);
+				$this->db->select('*');
+				$this->db->from('transaksi');
+				$this->db->join('datamember','datamember.id_member=transaksi.id_member');
+				$query = $this->db->get();
+				return $query->result();
 			}
 
 			function final_data($where,$data,$table){

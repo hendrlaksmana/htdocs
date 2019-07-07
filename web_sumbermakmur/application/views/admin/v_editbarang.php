@@ -77,7 +77,7 @@
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Harga</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="exampleInput" placeholder="Harga" required="required" name="harga" value="<?php echo $row->harga ?>">
+            <input type="number" class="form-control" id="exampleInput" placeholder="Rp." required="required" name="harga" value="<?php echo $row->harga ?>">
           </div>
           </div>
 

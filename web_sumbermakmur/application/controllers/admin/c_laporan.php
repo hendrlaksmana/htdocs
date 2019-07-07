@@ -33,9 +33,9 @@
 			redirect('admin/c_laporan');
 	 	}
 
-	 	function print()
-	 	{
+	 	function print(){
 	 		$data['laporan_transaksi']=$this->m_laporan->tampil_data();
+	 		$data['total_hasil']=$this->m_laporan->get_sum();
 	 		$this->load->view("admin/v_laporan_print",$data);
 	 	}
 

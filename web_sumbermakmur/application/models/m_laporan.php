@@ -41,5 +41,11 @@
 				return $this->db->get_where($table,$where);
 			}
 
+			function get_sum(){
+				$this->db->select_sum('total_pembelian','total_jumlah');
+				$query = $this->db->get('laporan_transaksi')->result();
+				return $query;
+			}
+
 		}
 ?>

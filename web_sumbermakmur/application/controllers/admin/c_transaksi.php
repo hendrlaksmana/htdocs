@@ -35,7 +35,7 @@
 
 	 	function sukses($id_transaksi){
 	 		$where = array('id_transaksi' => $id_transaksi);
-			$data['transaksi'] = $this->m_transaksi->sukses_data($where,'transaksi')->result();
+			$data['transaksi'] = $this->m_transaksi->sukses_data($where,'transaksi');
 			$this->load->view("admin/v_sukses",$data);
 	 	}
 
@@ -48,6 +48,7 @@
 			$nama_admin = $this->input->post('nama_admin');
 		 
 			$data = array(
+				'id_transaksi' => $id_transaksi,
 				'id_member' => $id_member,
 				'id_ongkir' => $id_ongkir,
 				'tanggal' => $tanggal,
