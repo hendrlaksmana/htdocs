@@ -111,10 +111,15 @@
 
 
 
+          <li class="has-children">
+              <a href="#" style="color:white;font-size: 18px">Tentang Toko</a>
+              <ul class="dropdown">
+                <li><a href="<?php echo base_url('index.php/member/c_carabayar') ?>"style="font-size: 18px">Cara Pembayaran</a></li>
+                <li><a href="<?php echo base_url('index.php/member/c_tentangtoko') ?>" style="font-size: 18px">Profile Toko</a></li>
+              </ul>
+            </li>
 
-
-            <li><a href="<?php echo base_url('index.php/member/c_carabayar') ?>"style="color:white;font-size: 18px">Cara Pembayaran</a></li>
-            <li><a href="<?php echo base_url('index.php/member/c_tentangtoko') ?>" style="color:white;font-size: 18px">Tentang Toko</a></li>
+            
             
           </ul>
         

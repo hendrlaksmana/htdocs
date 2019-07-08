@@ -19,7 +19,7 @@
             <div class="intro-text text-center text-md-left">
               <p class="mb-4" style="color:white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla. </p>
               <p>
-                <a href="#" class="btn btn-sm btn-light">Shop Now</a>
+                <a href="<?php echo base_url('index.php/member/c_katalog/index') ?>" class="btn btn-sm btn-light">Shop Now</a>
               </p>
             </div>
           </div>

@@ -7,4 +7,9 @@
   <script src="<?php echo base_url ('assets/member/js/aos.js')?>"></script>
 
   <script src="<?php echo base_url ('assets/member/js/main.js')?>"></script>
+
+  <script src="<?php echo base_url ('assets/bootstrap/js/tooltip.min.js')?>"></script>
+  <script src="<?php echo base_url ('assets/bootstrap/js/bootstrap.bundle.js')?>"></script>
+  <script src="<?php echo base_url ('assets/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
+  <script src="<?php echo base_url ('assets/bootstrap/js/bootstrap.js')?>"></script>
   

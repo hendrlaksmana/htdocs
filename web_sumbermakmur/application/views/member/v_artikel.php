@@ -18,10 +18,10 @@
           			<?php foreach($data as $data):?>
               
                   <tr style="color:black;font-size: 16px">
-                    <td rowspan="1"> <img src="<?php echo base_url().'assets/foto_artikel/'.$data->foto ?>" style="width: 300px;height: 250px"></td>
-                    <td><b><?php echo $data->judul_artikel; ?></b>                                  
-                                            <?php echo substr(($data->deskripsi), 0,400);?>
-                                            <p> <a style="color:blue;font-size: 16px" href=<?php echo site_url ('/member/c_artikel/show/'.$data->id_artikel)?>> Read More </a></p> </td>
+                    <td rowspan="1"> <img src="<?php echo base_url().'assets/foto_artikel/'.$data->foto ?>" style="width: 250px;height: 200px"></td>
+                    <td><b style="font-size: 25px"><?php echo $data->judul_artikel; ?></b>                                  
+                                            <p style="font-size: 5px;"><?php echo substr(($data->deskripsi), 0,300);?>...&nbsp;&nbsp;&nbsp;<a style="color:blue;font-size: 16px" href=<?php echo site_url ('/member/c_artikel/show/'.$data->id_artikel)?> >Baca Selengkapnya</a></p>
+                                            <p> </p> </td>
                                             
                                             <!-- 
                                             href=<?php echo site_url ('/member/c_artikel/show/'.$data->id_artikel)?>;> -->
