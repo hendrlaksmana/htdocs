@@ -40,8 +40,8 @@
           <input class="btn btn-light btn-block" type="submit" value="Login" style="background-color: #7CB238">
         </form>
         <div class="text-center">
-          <a class="d-block small mt-3" href="<?php echo base_url('index.php/member/c_daftar') ?>">Register an Account</a>
-          <a class="d-block small" href="<?php echo base_url('index.php/member/C_lupapassword') ?>">Forgot Password?</a>
+          <a class="d-block small mt-3" href="<?php echo base_url('index.php/member/c_daftar') ?>">Tidak punya akun?</a>
+          <a class="d-block small" href="<?php echo base_url('index.php/member/C_lupapassword') ?>">Lupa Password?</a>
         </div>
         <div class="alert alert-danger">
         <p>Gagal Login</p>

@@ -15,10 +15,9 @@
      <div class="container">
      
      <div class="card card-login mx-auto" style="width: 70%;margin-top: -20px">
-      <div class="card-header" align="center" style="height: 140px;background-color: white;">
-      <img src="<?php echo base_url('assets/sumber_makmur/logo.png')?>" style="height: 100px; width: 100px;"></div>
       <div class="card-body" style="margin-top: 5px;padding: 10px">
         <form action="<?php echo base_url('index.php/login_member/aksi_login'); ?>" method="post">
+          <h2 class="card-title text-center">Login</h2>
           <div class="form-group">
             <div class="form-label-group">
               <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required="required" autofocus="autofocus" name="username">
@@ -40,8 +39,8 @@
           <input class="btn btn-light btn-block" type="submit" value="Login" style="background-color: #7CB238">
         </form>
         <div class="text-center">
-          <a class="d-block small mt-3" href="<?php echo base_url('index.php/member/c_daftar') ?>">Register an Account</a>
-          <a class="d-block small" href="<?php echo base_url('index.php/member/C_lupapassword') ?>">Forgot Password?</a>
+          <a class="d-block small mt-3" href="<?php echo base_url('index.php/member/c_daftar') ?>">Tidak punya akun?</a>
+          <a class="d-block small" href="<?php echo base_url('index.php/member/C_lupapassword') ?>">Lupa Password?</a>
         </div>
       </div>
     </div>

@@ -23,7 +23,7 @@
           </div>
         </div>
         <div class="alert alert-danger" role="alert">
-          Username yang anda masukkan salah!
+          Username yang anda masukkan tidak ditemukan!
         </div>
           <button type="submit" name="save" class="btn btn-primary">Lupa Password</button>
           
