@@ -41,7 +41,7 @@
         </form>
         <div class="text-center">
           <a class="d-block small mt-3" href="<?php echo base_url('index.php/member/c_daftar') ?>">Register an Account</a>
-          <a class="d-block small" href="">Forgot Password?</a>
+          <a class="d-block small" href="<?php echo base_url('index.php/member/C_lupapassword') ?>">Forgot Password?</a>
         </div>
       </div>
     </div>
