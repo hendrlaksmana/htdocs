@@ -4,8 +4,8 @@
 
             <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
               <form action="" class="site-block-top-search">
-                <span class="icon icon-search2"></span>
-                <input type="text" class="form-control border-0" placeholder="Search">
+                <!--<span class="icon icon-search2"></span>
+                <input type="text" class="form-control border-0" placeholder="Search">-->
               </form>
             </div>
 
@@ -47,6 +47,10 @@
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                
                 <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="<?php echo base_url('index.php/member/C_profile') ?>">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Informasi Akun
+                </a>
                 <a class="dropdown-item" href="<?php echo base_url('index.php/login_member/logout') ?>">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                   Logout
