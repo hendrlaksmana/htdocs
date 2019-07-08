@@ -79,6 +79,13 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 	 		$this->load->view("member/v_checkout",$data);
 
 	 	}
+
+function nota()
+	 	{
+	 		$data['biaya_kirim']=$this->m_keranjang->tampil_data();
+	 		$this->load->view("member/v_nota",$data);
+	 	}
+ 
 	} 
 
  ?>
@@ -91,11 +98,3 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 
 
-<!-- 		
-
-function nota()
-	 	{
-	 		$data['biaya_kirim']=$this->m_keranjang->tampil_data();
-	 		$this->load->view("member/v_nota",$data);
-	 	}
- -->

@@ -15,7 +15,7 @@
  		 <div class="container">
      	<h4 style="padding-left: 30px;"> Checkout </h4>
       </br>    
-    <form action="<?php echo site_url()?>/member/c_verifikasi" method="post" >
+    <form action="<?php echo site_url()?>/member/C_beli/nota" method="post" >
             
             <div class="form-grup" style="margin-left: 30px;">
             <div class="form-grup row">

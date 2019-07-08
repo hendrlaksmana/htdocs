@@ -13,13 +13,13 @@
 
     <div class="site-section site-section-sm site-blocks-1">
  		 <div class="container">
- 		 	<h4 style="padding-left: 30px;"> Nota Pembayaran </h4>
-          
+ 		 	<!-- <h4 style="padding-left: 30px;"> Nota Pembayaran </h4>
+                 -->    
     <div class="row-fluid">
       <div class="pembeliaan" style="margin-left: 30px; float: left;">
-        <strong>No. Pembelian : </strong><br>
-        Tanggal :  <br>
-      </div>
+      <!--   <strong>No. Pembelian : </strong><br>
+      Tanggal :  <br>
+             --></div>
       <div class="pembeli" style="float: right; margin-right: 30px;">
         <strong><?php echo $_SESSION['nama'] ?></strong> <br>
         <p>
@@ -32,9 +32,9 @@
       &nbsp;
       <div class="alamat" style="margin-left: 30px; margin-top: 40px;">
 
-        Wilayah kirim :  ; ?><br>
+        <!-- Wilayah kirim :  <br>
         Ongkos Kirim : Rp. <br>
-
+         -->
         
       </div>
 
@@ -53,7 +53,7 @@
 <td width="8%">Jumlah</td>
 <td width="17%">Harga</td>
 <td width="20%">Total Harga</td>
-<td width="10%">Hapus</td>
+<!-- <td width="10%">Hapus</td> -->
 </tr>
 <?php
 // Create form and send all values in "shopping/update_cart" function.
@@ -71,12 +71,12 @@ $grand_total = $grand_total + $item['subtotal'];
 <input type="hidden" name="cart[<?php echo $item['id'];?>][qty]" value="<?php echo $item['qty'];?>" />
 <tr>
 <td><?php echo $i++; ?></td>
-<td><img class="img-responsive" src="<?php echo base_url() . 'assets/images/'.$item['gambar']; ?>"/></td>
+<td><img style="height: 100px;width: 100px" class="img-responsive" src="<?php echo base_url().'assets/upload/foto_produk/'.$item['gambar']; ?>"/></td>
 <td><?php echo $item['name']; ?></td>
 <td><input type="text" class="form-control input-sm" name="cart[<?php echo $item['id'];?>][qty]" value="<?php echo $item['qty'];?>" /></td>
 <td><?php echo number_format($item['price'], 0,",","."); ?></td>
 <td><?php echo number_format($item['subtotal'], 0,",",".") ?></td>
-<td><a href="<?php echo site_url()?>/member/c_beli/hapus/<?php echo $item['rowid'];?>" class="btn btn-sm btn-danger">Hapus</i></a></td>
+
 <?php endforeach; ?>
 </tr>
 <tr>
