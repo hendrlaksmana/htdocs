@@ -14,9 +14,9 @@
 	 	
 	 	function index()
 	 	{
-	 		$config['base_url'] = site_url('member/c_katalog/index'); //site url
+	 		$config['base_url'] = site_url('member/c_katalog/'); //site url
         $config['total_rows'] = $this->db->count_all('produk'); //total row
-        $config['per_page'] = 20;  //show record per halaman
+        $config['per_page'] = 2;  //show record per halaman
         $config["uri_segment"] = 3;  // uri parameter
         $choice = $config["total_rows"] / $config["per_page"];
         $config["num_links"] = floor($choice);
@@ -26,6 +26,7 @@
         $config['last_link']        = 'Last';
         $config['next_link']        = 'Next';
         $config['prev_link']        = 'Prev';
+        
         $config['full_tag_open']    = '<div class="pagging text-center"><nav><ul class="pagination justify-content-center">';
         $config['full_tag_close']   = '</ul></nav></div>';
         $config['num_tag_open']     = '<li class="page-item"><span class="page-link">';

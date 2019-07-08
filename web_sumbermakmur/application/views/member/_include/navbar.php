@@ -85,10 +85,10 @@
               <a href="<?php echo base_url() ?>" style="color:white;font-size: 18px">Home</a>
             </li>
             <li class="has-children">
-              <a href="<?php echo site_url('member/c_katalog') ?>" style="color:white;font-size: 18px">Katalog</a>
+              <a href="#" style="color:white;font-size: 18px">Katalog</a>
               <ul class="dropdown">
 
-                <li><a href="<?php echo site_url('member/c_katalog') ?>">SEMUA KATEGORI</a></li>
+                <!-- <li><a href="<?php echo site_url('member/c_katalog') ?>">SEMUA KATEGORI</a></li> -->
                 <li><a href="<?php echo base_url('index.php/member/c_katalog/alat_pertanian') ?>">Alat Pertanian</a></li>
                 <li><a href="<?php echo base_url('index.php/member/c_katalog/benih') ?>">Benih</a></li>
                 <li><a href="<?php echo base_url('index.php/member/c_katalog/bibit') ?>">Bibit</a></li>

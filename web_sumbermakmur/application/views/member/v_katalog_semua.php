@@ -12,7 +12,7 @@
 
         <div class="site-section site-section-sm site-blocks-1" style="background-color: #f8f9fa">
      		 <div class="container">
-     		     <form method="post" action="<?php echo site_url();?>/member/c_beli/tambah" method="post">
+     		     <form method="post" action="<?= site_url(); ?>/member/C_beli/tambah" method="post">
               <h2 style="margin-left: 30px;"> Semua Barang </h2></>
                 <div class="row" style="margin-top: 20px; margin-left: 20px;">
                 <?php 
@@ -27,8 +27,13 @@
                       <p class="card-text"><?php echo substr(($data->deskripsi), 0,100);?></p>
                       <h5 align="center" style="background-color: #F4F8EF">Rp. <?php echo $data->harga ?></h5>
                           <div class="card-footer" align="center">
-                            <button type="submit" value="submit" class="btn btn-sm btn-success"><i class="glyphicon glyphicon-shopping-cart"></i> Beli</button>
-                            <a href="<?php echo site_url ('/member/c_katalog/detail_alat/'.$data->id_produk)?>" class="btn btn-success btn-md">Detail</a>
+                            <input type="hidden" name="id" value="<?php echo $data->id_produk; ?>" />
+                            <input type="hidden" name="name" value="<?php echo $data->nama_produk; ?>" />
+                            <input type="hidden" name="price" value="<?php echo $data->harga; ?>" />
+                            <input type="hidden" name="gambar" value="<?php echo $data->nama_file; ?>" />
+                            <input type="hidden" name="qty" value="1" />
+                            <button type="submit" class="btn btn-sm btn-success"><i class="glyphicon glyphicon-shopping-cart"></i> Beli</button>
+                              <a href="<?php echo site_url ('/member/c_katalog/detail_alat/'.$data->id_produk)?>" class="btn btn-success btn-md">Detail</a>
                           </div>
                     </div>
 
