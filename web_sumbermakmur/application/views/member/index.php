@@ -15,9 +15,9 @@
       <div class="container">
         <div class="row align-items-start align-items-md-center justify-content-end">
           <div class="col-md-5 text-center text-md-left pt-5 pt-md-0">
-            <h2 class="mb-2" style="color:white">Produk Terbaru</h2>
+            <h2 class="mb-2" style="color:white">toko produk produk pertanian</h2>
             <div class="intro-text text-center text-md-left">
-              <p class="mb-4" style="color:white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla. </p>
+              <p class="mb-4" style="color:white">menjual berbagai macam produk pertanian seperti pupuk pupuk untuk berbagai macam tanaman dan penunjang alat pertanian lainnya </p>
               <p>
                 <a href="<?php echo base_url('index.php/member/c_katalog/index') ?>" class="btn btn-sm btn-light">Shop Now</a>
               </p>
